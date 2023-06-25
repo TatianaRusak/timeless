@@ -1,0 +1,15 @@
+.navigation{
+  margin-top: 41px;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+  }
+  &__link{
+    font-family: 'Proxima Nova';
+    @include font(16px, 19px, $color: $color-light);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+}

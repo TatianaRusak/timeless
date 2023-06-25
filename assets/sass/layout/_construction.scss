@@ -1,0 +1,111 @@
+.construction {
+	position: relative;
+	min-height: 725px;
+	background: url("../images/construction/forest-fon.png") center bottom/100% no-repeat;
+	&__container {
+    min-height: 700px;
+    height: 100%;
+  }
+  &__header {
+    margin-bottom: 40px;
+  }
+	&__house {
+		position: absolute;
+		bottom: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+	}
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 167px;
+    width: 400px;
+    button {
+      padding-right: 68px;
+      text-align: right;
+    }
+  }
+  &__branch-cone {
+	position: absolute;
+	left: 0;
+	top: -50%;
+  }
+}
+
+.steps {
+	position: relative;
+	list-style: none;
+	@include font (18px, 24px);
+	&__item {
+		@include font (18px, 24px);
+		position: absolute;
+	  max-width: 180px;
+		&:nth-of-type(1) {
+			top: 0;
+			left: 0;
+			transform: translateX(245px) translateY(10px);
+		}
+		&:nth-of-type(2) {
+			top: 0;
+			left: 0;
+      transform: translateX(114px) translateY(82px);
+      text-align: right;
+		}
+		&:nth-of-type(3) {
+			top: 0;
+			left: 0;
+      transform: translateX(-41px) translateY(206px);
+      text-align: right;
+		}
+		&:nth-of-type(4) {
+      top: 0;
+      left: 0;
+      transform: translateX(-5px) translateY(338px);
+      text-align: right;
+		}
+		&:nth-of-type(5) {
+			top: 0;
+			left: 0;
+      transform: translateX(767px);
+		}
+		&:nth-of-type(6) {
+      top: 0;
+      right: 0;
+      transform: translateX(-82px) translateY(88px);
+		}
+	}
+  &__item-descr {
+	@include font (14px, 22px, $color: rgba(31, 35, 30, 0.75));
+  }
+	&__number {
+		@include font(64px, 75px, 900);	
+		// position: absolute;
+		background: radial-gradient(86.11% 80.07% at 96.3% 47.32%, $color-primary-light 0%, rgba(142, 169, 136, 0.5) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+	.num-01 {
+		top: -24px;
+		position: absolute;
+		right: -86px;
+	}
+	.num-02, 
+	.num-03,
+	.num-04 {
+		position: absolute;
+    top: -16px;
+    right: -98px;
+	}
+	.num-05 {
+    position: absolute;
+    top: -10px;
+    left: -100px;
+	}
+	.num-06 {
+		position: absolute;
+    top: -10px;
+    left: -100px;
+	}
+}

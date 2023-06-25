@@ -1,0 +1,50 @@
+.guarantees {
+  background: url("../images/guarantees/guarantees-fon.jpg") center/cover no-repeat;
+  min-height: 630px;
+  padding: 120px 0;
+  &__content-wrapper {
+    width: 60%;
+  }
+  &__header {
+    text-align: left;
+    margin: 0 0 23px;
+    color: $color-light;
+  }
+  .deadlines-big {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+    &__item {
+      flex: 1;
+      margin-right: 15px;
+      @include font(16px, 27px, $color: $color-light);
+      span {
+        display: block;
+        @include font(64px, 75px, 900);
+        background: radial-gradient(#8EA988 0%, rgba(142, 169, 136, 0.5) 100%), 
+        #353A33;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+  .deadlines-small {
+    @include font(16px, 26px, $color: $color-light);
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+    &__item {
+      position: relative;
+      margin-right: 70px;
+      &::before {
+        content: url("../images/icons/check.svg");
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        left: -30px;
+      }
+    }
+  }
+}

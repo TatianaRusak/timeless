@@ -1,0 +1,22 @@
+.about {
+  background: url("../images/about/about-fon.jpg") center center/ cover no-repeat;
+  padding: 144px 0 168px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &__content {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    color: $color-light;
+    margin: 0 0 15px;
+    text-align: left;
+  }
+  &__text {
+    @include font(18px, 33px, $color: $color-light);
+  }
+}

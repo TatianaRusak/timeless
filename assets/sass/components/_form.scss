@@ -1,0 +1,94 @@
+.form {
+	background: $color-primary-bg-darker;
+  padding: 50px 60px;
+  border-radius: 15px;
+	&__item {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__item-header {
+		@include font (16px, 19px, 600);
+		margin-bottom: 10px;
+	}
+	&__item-phone {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 100%;
+			top: 0;
+			left: 20px;
+			opacity: 0.5;
+			background: url("../images/icons/phone.svg") center / 18px no-repeat;
+		}
+	}
+	&__item-email {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 100%;
+			top: 0;
+			left: 20px;
+			opacity: 0.5;
+			background: url("../images/icons/envelope.svg") center / 18px no-repeat;
+		}
+	}
+	.input-phone,
+	.input-email,
+	&__item-file {
+		height: 60px;
+		width: 100%;
+		border-radius: 8px;
+		@include font (16px, 19px, 500);
+		// color: rgba(31, 35, 30, 0.5);
+		padding: 20px 20px 20px 48px;
+		background: $color-primary-bg-lighter;
+	}
+	&__item-file {
+		position: relative;
+		padding: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 100%;
+			top: 0;
+			left: 20px;
+			opacity: 0.5;
+			background: url("../images/icons/paperclip.svg") center / 18px no-repeat;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			right: 5px;
+			bottom: 5px;
+			border: 1px dashed #8EA988;
+			border-radius: 8px;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 48px;
+			transform: translateY(-50%);
+			@include font(13px, 19px, 500);
+			opacity: 0.5;
+		}
+	}
+	.input-file {
+		opacity: 0;
+		width: 100%;
+	}
+	&__button {
+		@include font(18px, 22px, 500, $color: $color-light);
+		width: 100%;
+		margin-top: 40px;
+    flex: 1;
+    height: 60px;
+	}
+} 

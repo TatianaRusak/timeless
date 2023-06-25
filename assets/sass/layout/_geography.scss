@@ -1,0 +1,16 @@
+.geography {
+  padding: 66px 0 50px;
+  &__header {
+    margin-bottom: 15px;
+  }
+  &__text {
+    max-width: 550px;
+    margin: 0 auto;
+    @include font(14px, 22px);
+    text-align: center;
+  }
+  &__map {
+    display: block;
+    margin: 0 auto;
+  }
+}

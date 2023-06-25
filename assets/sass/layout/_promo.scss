@@ -1,0 +1,51 @@
+.promo{
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 235px;
+  background: linear-gradient(180deg, #242B25 0%, rgba(36, 43, 37, 0) 40%),
+    url("../images/ragged-lines/ragged-line-1.svg") center bottom/102% no-repeat,
+    url("../images/promo/promo_fon.jpg") center/cover no-repeat;
+  &__content{
+    margin-top: 142px;
+  }
+  &__header{
+    width: 75%;
+    margin-bottom: 37px;
+  }
+
+  .offer{
+    width: 485px;
+    height: 122px;
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    background: url("../images/promo/round-log.png") left center/ 120px no-repeat,
+      rgba(142, 169, 136, 0.25);
+    padding: 17px 22px 18px 130px;
+    &__name {
+      @include font(16px, 20px, 700, $color: $color-light);
+      letter-spacing: 0.175rem;
+      text-transform: uppercase;
+    }
+    &__text {
+      @include font(16px, 21px, 400);
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 4px;
+    }
+    &__loupe{
+      background: url("../images/icons/loupe.svg") center / auto no-repeat,
+                  rgb(73, 89, 74);
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 40% 0;
+      cursor: pointer;
+    }
+  }
+  &__button{
+    margin-top: 37px;
+    width: 320px;
+  }
+}

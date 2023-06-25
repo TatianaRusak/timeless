@@ -1,0 +1,23 @@
+.gallery {
+  margin-bottom: 87px;
+}
+.gallery__line-1,
+.gallery__line-2 {
+    height: 306px;
+    display: flex;
+    & > img {
+      width: auto;
+      height: 100%;
+      background: #D9D9D9;
+      border-radius: 15px;
+      margin-right: 13px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+}
+
+.gallery__line-1 {
+  transform: translateX(-200px);
+  margin-bottom: 15px;
+}

@@ -1,0 +1,42 @@
+.activity {
+  min-height: 400px;
+  position: relative;
+  padding: 160px 0 160px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+          url("../images/activity/activity-fon.png") center bottom / contain no-repeat;
+
+  &__container {
+    display: flex;
+  }
+  &__header {
+    text-align: left;
+    margin-right: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-basis: 2;
+  }
+  &__item {
+    width: 360px;
+    min-height: 217px;
+    background: rgba(227, 236, 225, 0.8);
+    border-radius: 15px;
+    margin: 0 40px 40px 0;
+    padding: 33px 40px 50px;
+    > img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 20px;
+    }
+    p {
+      @include font (20px, 24px);
+    }
+  }
+  &__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

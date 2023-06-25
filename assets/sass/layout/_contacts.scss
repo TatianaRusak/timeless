@@ -1,0 +1,33 @@
+.contacts {
+	background: url("../images/contacts/contacts-fon.png") center bottom / 100% no-repeat;
+	min-height: 697px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin-right: 30px;
+    flex: 1;
+	}
+	&__header {
+		margin: 0 0 63px;
+
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 47px;
+		& a {
+			@include font(28px, 33px, $color: #000000);
+		}
+	}
+}
+
+.contacts__form {
+	max-width: 460px;
+	width: 460px;
+  flex: 1;
+}

@@ -1,0 +1,103 @@
+.advantages {
+  background: url("../images/advantages/branch-fon.png") right no-repeat;
+  padding-top: 115px;
+  &__header {
+    margin-bottom: 88px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .advantage {
+    position: relative;
+    width: 260px;
+    min-height: 237px;
+    padding: 129px 20px 36px;
+    margin-bottom: 110px;
+    margin-right: 40px;
+    background: rgba(142, 169, 136, 0.1);
+    border-radius: 15px;
+    &:nth-of-type(4n+4) {
+      margin-right: 0;
+    }
+    &__img-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(44%) translateY(-50%);
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: $color-primary-light;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
+        opacity: 0.2;
+        border: 2px solid $color-primary-light;
+        border-radius: 50%;
+        z-index: -2;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        left: -16px;
+        bottom: -16px;
+        opacity: 0.2;
+        border: 1px solid $color-primary-light;
+        border-radius: 50%;
+        z-index: -2;
+      }
+    }
+    &:nth-child(1) img {
+      position: absolute;
+      top: -5px;
+    }
+    &:nth-child(2) img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &:nth-child(3) img {
+      position: absolute;
+      right: 0;
+      top: -1px;
+    }
+    &:nth-child(4) img {
+      position: absolute;
+      right: 0;
+      bottom: 8px;
+    }
+    &:nth-child(5) img {
+      position: absolute;
+      left: 15px;
+      top: -4px;
+    }
+    &:nth-child(6) img {
+      position: absolute;
+      left: 13px;
+      top: -8px;
+    }
+    &:nth-child(7) img {
+      position: absolute;
+      left: -16px;
+      bottom: -1px;
+    }
+    &__text {
+      text-align: center;
+      @include font (2rem, 2.4rem);
+    }
+  }
+  &__branch {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
