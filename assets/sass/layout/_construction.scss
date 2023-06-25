@@ -1,6 +1,6 @@
 .construction {
 	position: relative;
-	min-height: 725px;
+  min-height: 742px;
 	background: url("../images/construction/forest-fon.png") center bottom/100% no-repeat;
 	&__container {
     min-height: 700px;
@@ -13,13 +13,12 @@
 		position: absolute;
 		bottom: 0;
     left: 50%;
-    z-index: 2;
     transform: translateX(-50%);
 	}
   &__button {
     position: absolute;
     right: 0;
-    bottom: 167px;
+    bottom: 145px;
     width: 400px;
     button {
       padding-right: 68px;
@@ -44,35 +43,35 @@
 		&:nth-of-type(1) {
 			top: 0;
 			left: 0;
-			transform: translateX(245px) translateY(10px);
+      transform: translateX(206px) translateY(0);
 		}
 		&:nth-of-type(2) {
 			top: 0;
 			left: 0;
-      transform: translateX(114px) translateY(82px);
+      transform: translateX(76px) translateY(100px);
       text-align: right;
 		}
 		&:nth-of-type(3) {
 			top: 0;
 			left: 0;
-      transform: translateX(-41px) translateY(206px);
+      transform: translateX(-22px) translateY(200px);
       text-align: right;
 		}
 		&:nth-of-type(4) {
       top: 0;
       left: 0;
-      transform: translateX(-5px) translateY(338px);
+      transform: translateX(-20px) translateY(354px);
       text-align: right;
 		}
 		&:nth-of-type(5) {
 			top: 0;
 			left: 0;
-      transform: translateX(767px);
+      transform: translateX(800px);
 		}
 		&:nth-of-type(6) {
       top: 0;
       right: 0;
-      transform: translateX(-82px) translateY(88px);
+      transform: translateX(-44px) translateY(110px);
 		}
 	}
   &__item-descr {
@@ -87,7 +86,7 @@
 		background-clip: text;
 	}
 	.num-01 {
-		top: -24px;
+    top: -12px;
 		position: absolute;
 		right: -86px;
 	}

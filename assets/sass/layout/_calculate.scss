@@ -1,19 +1,36 @@
 .calculate {
-	padding: 253px 0 92px;
-	background: url("../images/calculate/calculate-fon.png") center bottom / 100% no-repeat;
-	&__header {
-		text-align: left;
-		margin: 0 0 55px;
-	}
+  padding: 398px 0 92px;
+  margin-top: -234px;
+  background: linear-gradient(to top, #f2f5f1, rgba(255, 255, 255, 0)),
+    url("../images/calculate/calculate-fon.png") center top/ 100% no-repeat,
+    $color-primary-bg-lighter;
+  mask: url("../images/ragged-lines/calculate_top.svg") center top / 100%
+    no-repeat;
+  &__header {
+    text-align: left;
+    margin: 0 0 57px;
+  }
 }
 
 .calculate__form {
-	display: flex;
-	align-items: end;
-	justify-content: space-between;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 50px 60px 52px;
+  box-shadow: 0px 16px 64px rgba(45, 54, 43, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
 
-	.form__item {
-		flex: 1;
-		margin-right: 30px;
-	}
+  .form__item {
+    flex: 1;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .form__item-header {
+    @include font(16px, 19px, 600);
+    margin-bottom: 20px;
+  }
 }

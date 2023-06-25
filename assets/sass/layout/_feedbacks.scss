@@ -1,7 +1,10 @@
 .feedbacks {
   background: $color-primary-bg-darker;
-  padding: 50px 0 100px;
+  padding: 153px 0 160px;
   min-height: 360px;
+  margin-top: -145px;
+    overflow-x: hidden;
+    mask: url("../images/ragged-lines/ragged-line-feedbacks-top.svg") center top / 100% no-repeat;
   &__header-zone {
     display: flex;
     flex-direction: row;
@@ -34,7 +37,7 @@
     background: $color-primary-bg-lighter;
     border-radius: 15px;
     padding: 24px 30px 25px 33px;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
     a {
       @include font (14px, 22px, 700, $color: $color-primary-light);
       text-decoration-line: underline;
@@ -42,7 +45,7 @@
   }
   &__content {
     @include font (14px, 22px);
-    margin-bottom: 10px;
+    margin-bottom: 22px;
   }
   &__author {
     display: flex;

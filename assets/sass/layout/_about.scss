@@ -1,13 +1,14 @@
 .about {
   background: url("../images/about/about-fon.jpg") center center/ cover no-repeat;
-  padding: 144px 0 168px;
+  padding: 144px 0 200px;
+  mask: url("../images/ragged-lines/ragged-line-guarantee-top.svg") center top / 100% no-repeat;
   &__container {
     display: flex;
     flex-direction: column;
     align-items: end;
   }
   &__content {
-    max-width: 520px;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
   }

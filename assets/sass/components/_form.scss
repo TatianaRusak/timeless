@@ -1,15 +1,9 @@
 .form {
-	background: $color-primary-bg-darker;
-  padding: 50px 60px;
+background: $color-primary-bg-darker;
   border-radius: 15px;
 	&__item {
-		margin-top: 30px;
 		display: flex;
 		flex-direction: column;
-	}
-	&__item-header {
-		@include font (16px, 19px, 600);
-		margin-bottom: 10px;
 	}
 	&__item-phone {
 		position: relative;
