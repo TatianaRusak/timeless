@@ -39,11 +39,15 @@
   &__form-header {
     margin-bottom: 30px;
   }
-  .form__item-header {
+  label {
     margin-bottom: 10px;
   }
-  label {
-    margin-bottom: 25px;
+  .form__item {
+    margin-bottom: 30px;
+  }
+  .form__item-header {
+    display: block;
+    margin-bottom: 10px;
   }
   .form__button {
     margin-top: 15px;

@@ -16,10 +16,11 @@ body {
   background: $color-primary-bg-lighter;
 }
 
-.container{
+.container {
   position: relative;
-  width: 1160px;
+  max-width: 1220px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 h1{
@@ -45,4 +46,8 @@ h4{
 .text-colored {
   color: $color-primary-light;
   font-weight: 600;
+}
+
+.none {
+  display: none;
 }

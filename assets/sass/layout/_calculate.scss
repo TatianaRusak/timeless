@@ -30,6 +30,7 @@
   }
 
   .form__item-header {
+    display: block;
     @include font(16px, 19px, 600);
     margin-bottom: 20px;
   }

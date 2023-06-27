@@ -250,8 +250,9 @@ body {
 
 .container {
   position: relative;
-  width: 1160px;
+  max-width: 1220px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 h1 {
@@ -293,6 +294,39 @@ h4 {
 .text-colored {
   color: #8EA988;
   font-weight: 600;
+}
+
+.none {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.icon-small {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-big {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-phone {
+  background: rgba(143, 170, 137, 0.25) url("../images/icons/phone.svg") center/50% no-repeat;
+}
+
+.icon-email {
+  background: rgba(143, 170, 137, 0.25) url("../images/icons/envelope.svg") center/50% no-repeat;
+}
+
+.icon-map {
+  background: rgba(143, 170, 137, 0.25) url("../images/icons/map-pin.svg") center/50% no-repeat;
 }
 
 .logo-line {
@@ -337,33 +371,32 @@ h4 {
   text-decoration: none;
 }
 
-.icon {
-  display: inline-block;
+.burger {
+  display: none;
+  top: 30px;
+  right: 30px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
-  margin-right: 15px;
+  position: fixed;
 }
-
-.icon-small {
-  width: 32px;
-  height: 32px;
+.burger__line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  border-radius: 50%;
+  background: #ffffff;
 }
-
-.icon-big {
-  min-width: 50px;
-  width: 50px;
-  height: 50px;
+.burger__line::before, .burger__line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: #fff;
 }
-
-.icon-phone {
-  background: rgba(143, 170, 137, 0.25) url("../images/icons/phone.svg") center/50% no-repeat;
-}
-
-.icon-email {
-  background: rgba(143, 170, 137, 0.25) url("../images/icons/envelope.svg") center/50% no-repeat;
-}
-
-.icon-map {
-  background: rgba(143, 170, 137, 0.25) url("../images/icons/map-pin.svg") center/50% no-repeat;
+.burger__line::before {
+  width: 100%;
+  bottom: 0;
 }
 
 .button {
@@ -415,6 +448,7 @@ h4 {
 }
 .form .input-phone,
 .form .input-email, .form__item-file {
+  display: block;
   height: 60px;
   width: 100%;
   border-radius: 8px;
@@ -1201,6 +1235,7 @@ h4 {
   margin-right: 0;
 }
 .calculate__form .form__item-header {
+  display: block;
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
@@ -1227,6 +1262,8 @@ h4 {
 }
 .geography__map {
   display: block;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -1299,11 +1336,15 @@ h4 {
 .contacts__form-header {
   margin-bottom: 30px;
 }
-.contacts .form__item-header {
+.contacts label {
   margin-bottom: 10px;
 }
-.contacts label {
-  margin-bottom: 25px;
+.contacts .form__item {
+  margin-bottom: 30px;
+}
+.contacts .form__item-header {
+  display: block;
+  margin-bottom: 10px;
 }
 .contacts .form__button {
   margin-top: 15px;

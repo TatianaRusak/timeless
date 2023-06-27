@@ -33,6 +33,10 @@
         </ul>
       </nav>
 
+      <div class="burger">
+        <span class="burger__line"></span>
+      </div>
+
       <div class="promo__content">
         <h1 class="promo__header"><span class="text-colored">Timeless — </span><br> строительство загородной недвижимости</h1>
 
@@ -49,7 +53,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages none1">
     <div class="container">
       <h2 class="advantages__header">Наши преимущества</h2>
       
@@ -89,7 +93,7 @@
     </div>
   </section>
 
-  <section class="construction">
+  <section class="construction none">
     <div class="container construction__container">
       <h2 class="construction__header">Строительство деревянных домов и бань</h2>
       
@@ -112,7 +116,7 @@
     <img class="construction__branch-cone" src="./assets/images/construction/branch-fon-cone.png" alt="fon branch">
   </section>
 
-  <section class="guarantees">
+  <section class="guarantees none">
     <div class="container guarantees__container">
       <div class="guarantees__content-wrapper">
         <h2 class="guarantees__header">Мы гарантируем быстрые сроки выполнения работ</h2>
@@ -131,7 +135,7 @@
     </div>
   </section>
 
-  <section class="gifts">
+  <section class="gifts none">
     <div class="container">
       <h2>Подарки и акции</h2>
       
@@ -156,9 +160,10 @@
           <div class="gift__content">
             <div class="gift__text">
               <p class="gift__condition">Для Вашего удобства мы предлагаем</p>
-              <p class="gift__description"><span>
-                  <span class="text-colored">Бесплатный проект
-                </span> в подарок при&nbsp;заказе дома <span class="text-colored">под ключ</span></p>
+              <p class="gift__description">
+                <span class="text-colored">Бесплатный проект</span>
+                в подарок при&nbsp;заказе дома <span class="text-colored">под ключ</span>
+              </p>
               <p class="gift__addition">а также бесплатный выезд на замеры и геодезию на участок клиента.</p>
             </div>
             <div class="gift__button">
@@ -170,7 +175,7 @@
     </div>
   </section>
 
-  <section class="usage">
+  <section class="usage none">
     <div class="container">
       <h2>Эксплуатация и использование</h2>
 
@@ -206,7 +211,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about none">
     <div class="container about__container">
       <div class="about__content">
         <h2 class="about__header">О компании Timeless</h2>
@@ -216,7 +221,7 @@
     </div>
   </section>
 
-  <section class="activity">
+  <section class="activity none">
     <div class="container activity__container">
       <h2 class="activity__header">Сфера деятельности</h2>
 
@@ -247,7 +252,7 @@
     <img class="activity__image" src="./assets/images/activity/house2.png" alt="wooden house">
   </section>
 
-  <section class="feedbacks">
+  <section class="feedbacks none">
     <div class="container feedbacks__container">
       <div class="feedbacks__header-zone">
         <h2 class="feedbacks__header">Отзывы клиентов</h2>
@@ -270,7 +275,7 @@
               <p class="feedback__author-name">Денис<span class="text-colored"> Денискович</span></p>
               <p class="feedback__author-job">Строитель</p>
             </div>
-            </img>
+          </div>
         </li>
         <li class="feedback">
           <div class="feedback__text">
@@ -312,7 +317,7 @@
               <p class="feedback__author-name">Денис<span class="text-colored"> Денискович</span></p>
               <p class="feedback__author-job">Строитель</p>
             </div>
-            </img>
+          </div>
         </li>
         <li class="feedback blur">
           <div class="feedback__text">
@@ -334,36 +339,36 @@
 
   </section>
 
-  <section class="calculate">
+  <section class="calculate none">
     <div class="container">
       <h2 class="calculate__header">Отправьте проект<br> для расчёта стоимости дома</h2>
 
-      <form action class="calculate__form form" name="calculate-form" method="POST">
+      <form action="#" class="calculate__form form" name="calculate-form" method="POST">
         <div class="form__item">
           <label for="calculate-phone">
-            <p class="form__item-header">Ваш телефон</p>
-            <div class="form__item-phone">
+            <span class="form__item-header">Ваш телефон</span>
+            <span class="form__item-phone">
               <input class="input-phone" type="text" id="calculate-phone" placeholder="+7 (___) ___-__-__">
-            </div>
+            </span>
           </label>
         </div>
         <div class="form__item">
           <label for="calculate-email">
-            <p class="form__item-header">Ваша почта</p>
-            <div class="form__item-email">
+            <span class="form__item-header">Ваша почта</span>
+            <span class="form__item-email">
               <input class="input-email" type="email" id="calculate-email" placeholder="example@mail.com">
-            </div>
+            </span>
           </label>
         </div>
         <div class="form__item">
           <label for="calculate-file">
-            <p class="form__item-header">Прикрепите проект</p>
-            <div class="input-file-border">
-              <div class="form__item-file">
+            <span class="form__item-header">Прикрепите проект</span>
+            <span class="input-file-border">
+              <span class="form__item-file">
                 <input class="input-file" type="file" id="calculate-file" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
                 <span>Загрузите файл</span>
-              </div>
-            </div>
+              </span>
+            </span>
           </label>
         </div>
         
@@ -372,13 +377,13 @@
     </div>
   </section>
 
-  <section class="geography">
+  <section class="geography none">
     <h2 class="geography__header">География работы</h2>
     <p class="geography__text">Наши услуги доступны по всей России и ближайшему зарубежью, включая Египет, Иран, Ирак, Турцию и европейские страны.</p>
     <img class="geography__map" src="./assets/images/temporary/reography_temporary.png" alt="map">
   </section>
 
-  <section class="gallery">
+  <section class="gallery none">
     <div class="gallery__line-1">
       <img src="https://avatars.mds.yandex.net/i?id=6e898983a2c66d65ad15f1686de154e9a76550ad-9181168-images-thumbs&n=13" alt="пример деревянного дома">
       <img src="https://avatars.mds.yandex.net/i?id=d25e7477ebb7f5c20a418b96500b61e0f098aaac-9107083-images-thumbs&n=13" alt="пример деревянного дома">
@@ -400,7 +405,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts none">
     <div class="container contacts__container">
       <div class="contacts__text">
         <h2 class="contacts__header">Контакты</h2>
@@ -411,22 +416,22 @@
         </div>
       </div>
 
-      <form action class="contacts__form form" name="contacts-form" method="POST">
+      <form action="#" class="contacts__form form" name="contacts-form" method="POST">
         <h3 class="contacts__form-header">Форма обратной связи</h3>
         <div class="form__item">
           <label for="contacts-phone">
-            <p class="form__item-header">Ваш телефон</p>
-            <div class="form__item-phone contacts__form-item-phone">
+            <span class="form__item-header">Ваш телефон</span>
+            <span class="form__item-phone contacts__form-item-phone">
               <input class="input-phone" type="text" id="contacts-phone" placeholder="+7 (___) ___-__-__">
-            </div>
+            </span>
           </label>
         </div>
         <div class="form__item">
           <label for="contacts-email">
-            <p class="form__item-header">Ваша почта</p>
-            <div class="form__item-email">
+            <span class="form__item-header">Ваша почта</span>
+            <span class="form__item-email">
               <input class="input-email" type="email" id="contacts-email" placeholder="example@mail.com">
-            </div>
+            </span>
           </label>
         </div>
 
@@ -435,7 +440,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer none">
     <div class="container">
       <div class="logo-line">
         <div class="logo-block">
