@@ -1,459 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/fonts/Public_Sans/style.css">
-  <link rel="stylesheet" href="./assets/fonts/ProximaNova/style.css">
-  <link rel="stylesheet" href="./assets/sass/style.css">
-  <title>Timeless</title>
-</head>
-<body>
-  <section class="promo">
-    <div class="container">
-      <header class="logo-line">
-        <div class="logo-block">
-          <img src="./assets/images/icons/timeless-logo.svg" alt="logo" class="logo__img">
-          <p class="logo__slogan"><strong>С любовью</strong><br> из Сибири <img src="./assets/images/icons/heart.svg" alt="heart"></p>
-        </div>
-        
-        <p class="phone-block"><span class="icon icon-small icon-phone"></span><a href="tel:+79623134056" class="phone-link">+7 (962) 313-40-56</a></p>
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/fonts/Public_Sans/style.css" />
+    <link rel="stylesheet" href="./assets/fonts/ProximaNova/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Timeless</title>
+  </head>
 
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Гарантии</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Дома</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Бани</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Вопрос-ответ</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Фотогалерея</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Идеи для дома</a></li>
-        </ul>
-      </nav>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-block logo-block_header">
+          <img
+            src="./assets/images/icons/timeless-logo.svg"
+            alt="logo"
+            class="logo__img"
+          />
+          <p class="logo__slogan">
+            <strong>С любовью</strong> из&nbsp;Сибири
+            <img src="./assets/images/icons/heart.svg" alt="heart" />
+          </p>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#guarantees" class="navigation__link">Гарантии</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#constructions" class="navigation__link">Дома</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Бани</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Вопрос-ответ</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#gallery" class="navigation__link">Фотогалерея</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Идеи для дома</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="phone-block phone-block_header">
+            <span class="icon icon-small icon-phone"></span>
+            <a href="tel:+79623134056" class="phone-link">+7 (962) 313-40-56</a>
+          </p>
+
+          <div class="header__button">
+            <button class="button">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
 
       <div class="burger">
         <span class="burger__line"></span>
       </div>
+    </header>
 
-      <div class="promo__content">
-        <h1 class="promo__header"><span class="text-colored">Timeless — </span><br> строительство загородной недвижимости</h1>
+    <main>
+      <section class="promo none">
+        <div class="container">
+          <div class="promo__content">
+            <h1 class="promo__title">
+              <span class="text-colored">Timeless — </span><br />
+              строительство загородной недвижимости
+            </h1>
 
-        <div class="promo__offer offer">
-          <p class="offer__name">Специальное предложение:</p>
-          <p class="offer__text">БАНЯ 48 м². Оцилиндрованное бревно, Сибирский кедр, диаметр 24 за&nbsp;1,3&nbsp;млн.&nbsp;руб</p>
-          <span class="offer__loupe"></span>
-        </div>
-
-        <div class="promo__button">
-          <button class="button promo__button">Оставить заявку</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="advantages none1">
-    <div class="container">
-      <h2 class="advantages__header">Наши преимущества</h2>
-      
-      <ul class="advantages__list">
-        <li class="advantage">
-          <div class="advantage__img-wrapper">
-            <img src="./assets/images/advantages/wallet.png" alt="wallet" class="advantage__img">
-          </div>
-          <p class="advantage__text"><strong>Конкурентные</strong> цены</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/wood.png" alt="wood" class="advantage__img"></div>
-          <p class="advantage__text"><strong>Экологически чистые</strong> материалы
-          из Сибири</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/helmet.png" alt="helmet" class="advantage__img"></div>
-          <p class="advantage__text"><strong>Профессиональные</strong> сотрудники</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/chainsaw.png" alt="chainsaw" class="advantage__img"></div>
-          <p class="advantage__text"><strong>Полный цикл</strong> строительства</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/loupe.png" alt="loupe" class="advantage__img"></div>
-          <p class="advantage__text"><strong>Контроль качества</strong> на каждом этапе</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/stamp.png" alt="stamp" class="advantage__img"></div>
-          <p class="advantage__text"><strong>Официальная</strong> работа и договор</p>
-        </li>
-        <li class="advantage">
-          <div class="advantage__img-wrapper"><img src="./assets/images/advantages/instruments.png" alt="instruments" class="advantage__img"></div>
-          <p class="advantage__text">5 своих <strong>строительных бригад</strong></p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="construction none">
-    <div class="container construction__container">
-      <h2 class="construction__header">Строительство деревянных домов и бань</h2>
-      
-      <ul class="steps">
-        <li class="steps__item"><span class="steps__number num-01">01</span>Создание проекта</li>
-        <li class="steps__item"><span class="steps__number num-02">02</span>Производство домокомплекта</li>
-        <li class="steps__item"><span class="steps__number num-03">03</span>Доставка на участок</li>
-        <li class="steps__item"><span class="steps__number num-04">04</span>Монтаж домокомплекта</li>
-        <li class="steps__item"><span class="steps__number num-05">05</span>Сдача проекта и&nbsp;подписание документов</li>
-        <li class="steps__item"><span class="steps__number num-06">06</span>Дополнительные услуги: <br><span class="steps__item-descr">фундамент, отделка,
-        кровля, инженерные системы, ландшафтный дизайн</span></li>
-      </ul>
-      
-      <div class="construction__button">
-        <button class="button">Оставить заявку</button>
-      </div>
-      
-      <img class="construction__house" src="./assets/images/construction/house1.png" alt="wooden house">
-    </div>
-    <img class="construction__branch-cone" src="./assets/images/construction/branch-fon-cone.png" alt="fon branch">
-  </section>
-
-  <section class="guarantees none">
-    <div class="container guarantees__container">
-      <div class="guarantees__content-wrapper">
-        <h2 class="guarantees__header">Мы гарантируем быстрые сроки выполнения работ</h2>
-        
-        <ul class="guarantees__deadlines-big deadlines-big">
-          <li class="deadlines-big__item"><span>21</span>рабочий день на&nbsp;установку и монтаж</li>
-          <li class="deadlines-big__item"><span>20</span>рабочих дней на производство</li>
-          <li class="deadlines-big__item"><span>5 лет</span>Гарантия на строительство</li>
-        </ul>
-        
-        <ul class="guarantees__deadlines-small deadlines-small">
-          <li class="deadlines-small__item">Отклик на заявку <br><strong>в течении 15 минут</strong></li>
-          <li class="deadlines-small__item">Расчет сметы <br><strong>в течении 1 раб. дня</strong></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="gifts none">
-    <div class="container">
-      <h2>Подарки и акции</h2>
-      
-      <ul class="gifts__list">
-        <li class="gifts__item gift">
-          <img src="./assets/images/gifts/table.png" alt="table" class="gift__image">
-          <div class="gift__content">
-            <div class="gift__text">
-              <p class="gift__condition">При заказе строительства дома или бани</p>
-              <p class="gift__description">В подарок <span class="text-colored">стол из слеба в стиле LOFT</span> или <span
-                  class="text-colored">комплект садовой мебели </span>
-                в стилистике дома</p>
-              <p class="gift__addition">Уточняйте подробности у менеджеров компании</p>
-            </div>
-            <div class="gift__button">
-              <button type="button" class="button">Оставить заявку</button>
-            </div>
-          </div>
-        </li>
-        <li class="gifts__item gift">
-          <img src="./assets/images/gifts/plan.png" alt="plan" class="gift__image">
-          <div class="gift__content">
-            <div class="gift__text">
-              <p class="gift__condition">Для Вашего удобства мы предлагаем</p>
-              <p class="gift__description">
-                <span class="text-colored">Бесплатный проект</span>
-                в подарок при&nbsp;заказе дома <span class="text-colored">под ключ</span>
+            <div class="promo__offer offer">
+              <p class="offer__title">Специальное предложение:</p>
+              <p class="offer__text">
+                БАНЯ 48 м². Оцилиндрованное бревно, Сибирский кедр, диаметр 24
+                за&nbsp;1,3&nbsp;млн.&nbsp;руб
               </p>
-              <p class="gift__addition">а также бесплатный выезд на замеры и геодезию на участок клиента.</p>
+              <span class="offer__loupe"></span>
             </div>
-            <div class="gift__button">
-              <button type="button" class="button">Оставить заявку</button>
+
+            <div class="promo__button">
+              <button class="button">Оставить заявку</button>
             </div>
           </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+        </div>
+      </section>
 
-  <section class="usage none">
-    <div class="container">
-      <h2>Эксплуатация и использование</h2>
+      <section class="advantages none">
+        <div class="container">
+          <h2 class="advantages__header">Наши преимущества</h2>
 
-      <ul class="usage__list">
-        <li class="usage__item">
-          <div class="usage__img-wrapper">
-            <img src="./assets/images/usage/wood.png" alt="wood" class="usage__item-img">
-          </div>
-          <div class="usage__item-text">
-            <h4>Учет усадки</h4>
-            <p>дерева при монтаже</p>
-          </div>
-        </li>
-        <li class="usage__item">
-          <div class="usage__img-wrapper">
-            <img src="./assets/images/usage/timber.png" alt="timber" class="usage__item-img">
-          </div>
-          <div class="usage__item-text">
-            <h4>Трещины на бревне</h4>
-            <p>это естественный процесс</p>
-          </div>
-        </li>
-        <li class="usage__item">
-          <div class="usage__img-wrapper">
-            <img src="./assets/images/usage/wood-care.png" alt="wood-care" class="usage__item-img">
-          </div>
-          <div class="usage__item-text">
-            <h4>Правильный уход за деревянным домом:</h4>
-            <p>качественная отделка и своевременное обслуживание</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+          <ul class="advantages__list">
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/wallet.png"
+                  alt="wallet"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text"><strong>Конкурентные</strong> цены</p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/wood.png"
+                  alt="wood"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                <strong>Экологически чистые</strong> материалы из Сибири
+              </p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/helmet.png"
+                  alt="helmet"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                <strong>Профессиональные</strong> сотрудники
+              </p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/chainsaw.png"
+                  alt="chainsaw"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                <strong>Полный цикл</strong> строительства
+              </p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/loupe.png"
+                  alt="loupe"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                <strong>Контроль качества</strong> на каждом этапе
+              </p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/stamp.png"
+                  alt="stamp"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                <strong>Официальная</strong> работа и договор
+              </p>
+            </li>
+            <li class="advantage">
+              <div class="advantage__img-wrapper">
+                <img
+                  src="./assets/images/advantages/instruments.png"
+                  alt="instruments"
+                  class="advantage__img"
+                />
+              </div>
+              <p class="advantage__text">
+                5 своих <strong>строительных бригад</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <section class="about none">
-    <div class="container about__container">
-      <div class="about__content">
-        <h2 class="about__header">О компании Timeless</h2>
-        <p class="about__text">Мы строим современные и качественные дома из ценных пород древесины кедра и лиственницы а также
-          каркасные дома различных стилей и технологий. Наша миссия- создание комфортной жизни в гармонии с природой</p>
+      <section class="construction none" id="constructions">
+        <div class="container construction__container">
+          <h2 class="construction__header">
+            Строительство деревянных <br />
+            домов и бань
+          </h2>
+
+          <ul class="steps">
+            <li class="steps__item">
+              <span class="steps__number num-01">01</span>Создание проекта
+            </li>
+            <li class="steps__item">
+              <span class="steps__number num-02">02</span>Производство
+              домокомплекта
+            </li>
+            <li class="steps__item">
+              <span class="steps__number num-03">03</span>Доставка на участок
+            </li>
+            <li class="steps__item">
+              <span class="steps__number num-04">04</span>Монтаж домокомплекта
+            </li>
+            <li class="steps__item">
+              <span class="steps__number num-05">05</span>Сдача проекта
+              и&nbsp;подписание документов
+            </li>
+            <li class="steps__item">
+              <span class="steps__number num-06">06</span>Дополнительные услуги:
+              <br /><span class="steps__item-descr"
+                >фундамент, отделка, кровля, инженерные системы, ландшафтный
+                дизайн</span
+              >
+            </li>
+          </ul>
+
+          <div class="construction__button">
+            <button class="button">Оставить заявку</button>
+          </div>
+
+          <img
+            class="construction__house"
+            src="./assets/images/construction/house1.png"
+            alt="wooden house"
+          />
+        </div>
+        <img
+          class="construction__branch-cone"
+          src="./assets/images/construction/branch-fon-cone.png"
+          alt="fon branch"
+        />
+      </section>
+
+      <section class="guarantees none" id="guarantees">
+        <div class="container guarantees__container">
+          <div class="guarantees__content-wrapper">
+            <h2 class="guarantees__title">
+              Мы гарантируем быстрые сроки выполнения работ
+            </h2>
+
+            <ul class="guarantees__deadlines-big deadlines-big">
+              <li class="deadlines-big__item">
+                <span>21</span>рабочий день <br />на&nbsp;установку и монтаж
+              </li>
+              <li class="deadlines-big__item">
+                <span>20</span>рабочих дней <br />на производство
+              </li>
+              <li class="deadlines-big__item">
+                <span>5 лет</span>Гарантия <br />на строительство
+              </li>
+            </ul>
+
+            <ul class="guarantees__deadlines-small deadlines-small">
+              <li class="deadlines-small__item">
+                Отклик на заявку <br /><strong>в течении 15 минут</strong>
+              </li>
+              <li class="deadlines-small__item">
+                Расчет сметы <br /><strong>в течении 1 раб. дня</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gifts none">
+        <div class="container gifts__container">
+          <h2 class="gifts__title">Подарки и акции</h2>
+
+          <ul class="gifts__list">
+            <li class="gifts__item gift">
+              <div class="gift__image-wrapper">
+                <img
+                  src="./assets/images/gifts/table.png"
+                  alt="table"
+                  class="gift__image"
+                />
+              </div>
+              <div class="gift__content">
+                <div class="gift__text">
+                  <p class="gift__condition">
+                    При заказе строительства дома или бани
+                  </p>
+                  <p class="gift__description">
+                    В подарок
+                    <span class="text-colored">стол из слеба в стиле LOFT</span>
+                    или
+                    <span class="text-colored">комплект садовой мебели </span>
+                    в стилистике дома
+                  </p>
+                  <p class="gift__addition">
+                    Уточняйте подробности у менеджеров компании
+                  </p>
+                </div>
+                <div class="gift__button">
+                  <button type="button" class="button">Оставить заявку</button>
+                </div>
+              </div>
+            </li>
+            <li class="gifts__item gift">
+              <img
+                src="./assets/images/gifts/plan.png"
+                alt="plan"
+                class="gift__image"
+              />
+              <div class="gift__content">
+                <div class="gift__text">
+                  <p class="gift__condition">
+                    Для Вашего удобства мы предлагаем
+                  </p>
+                  <p class="gift__description">
+                    <span class="text-colored">Бесплатный проект</span>
+                    в подарок при&nbsp;заказе дома
+                    <span class="text-colored">под ключ</span>
+                  </p>
+                  <p class="gift__addition">
+                    а также бесплатный выезд на замеры и геодезию на участок
+                    клиента.
+                  </p>
+                </div>
+                <div class="gift__button">
+                  <button type="button" class="button">Оставить заявку</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="usage none">
+        <div class="container">
+          <h2>Эксплуатация и использование</h2>
+
+          <ul class="usage__list">
+            <li class="usage__item">
+              <div class="usage__img-wrapper">
+                <img
+                  src="./assets/images/usage/wood.png"
+                  alt="wood"
+                  class="usage__item-img"
+                />
+              </div>
+              <div class="usage__item-text">
+                <h4>Учет усадки</h4>
+                <p>дерева при монтаже</p>
+              </div>
+            </li>
+            <li class="usage__item">
+              <div class="usage__img-wrapper">
+                <img
+                  src="./assets/images/usage/timber.png"
+                  alt="timber"
+                  class="usage__item-img"
+                />
+              </div>
+              <div class="usage__item-text">
+                <h4>Трещины на бревне</h4>
+                <p>это естественный процесс</p>
+              </div>
+            </li>
+            <li class="usage__item">
+              <div class="usage__img-wrapper">
+                <img
+                  src="./assets/images/usage/wood-care.png"
+                  alt="wood-care"
+                  class="usage__item-img"
+                />
+              </div>
+              <div class="usage__item-text">
+                <h4>Правильный уход <br />за деревянным домом:</h4>
+                <p>качественная отделка и своевременное обслуживание</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about none" id="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h2 class="about__header">О компании Timeless</h2>
+            <p class="about__text">
+              Мы строим современные и качественные дома из ценных пород
+              древесины кедра и лиственницы а также каркасные дома различных
+              стилей и технологий. Наша миссия- создание комфортной жизни в
+              гармонии с природой
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="activity none">
+        <div class="container activity__container">
+          <h2 class="activity__header">Сфера деятельности</h2>
+
+          <ul class="activity__list">
+            <li class="activity__item">
+              <img
+                src="./assets/images/icons/house.svg"
+                alt="icon house"
+                class="icon__activity"
+              />
+              <h4>Строительство</h4>
+              <p>деревянных домов и бань</p>
+            </li>
+            <li class="activity__item">
+              <img
+                src="./assets/images/icons/log.svg"
+                alt="wooden log"
+                class="icon__activity"
+              />
+              <h4>Производство</h4>
+              <p>домокомплектов из оцилиндрованного бревна</p>
+            </li>
+            <li class="activity__item">
+              <img
+                src="./assets/images/icons/carcass.svg"
+                alt="carcass"
+                class="icon__activity"
+              />
+              <h4>Каркасное домостроени</h4>
+              <p>различных технологий</p>
+            </li>
+            <li class="activity__item">
+              <img
+                src="./assets/images/icons/bricks.svg"
+                alt="bricks"
+                class="icon__activity"
+              />
+              <h4>Дополнительные услуги:</h4>
+              <p class="smaller-text">
+                фундамент, отделка, кровля, инженерные системы, ландшафтный
+                дизайн
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="activity__image-wrapper">
+          <img
+            class="activity__image"
+            src="./assets/images/activity/house2.png"
+            alt="wooden house"
+          />
+        </div>
+      </section>
+
+      <section class="feedbacks none1">
+        <div class="container feedbacks__container">
+          <div class="feedbacks__header-zone">
+            <h2 class="feedbacks__header">Отзывы клиентов</h2>
+          </div>
+          <div class="feedbacks__buttons">
+            <button id="prev" class="control btn-prev" type="button"></button>
+            <button id="next" class="control btn-next" type="button"></button>
+          </div>
+        </div>
+        <div id="slider" class="slider">
+          <div class="wrapper">
+            <ul class="feedbacks__list">
+              <li class="feedback slide">
+                <div class="feedback__text">
+                  <p class="feedback__content">
+                    С учётом сложившейся международной обстановки, новая
+                    модель организационной деятельности не даёт нам иного
+                    выбора, кроме определения благоприятных перспектив. С учётом сложившейся международной обстановки, новая
+                    модель организационной деятельности не даёт нам иного
+                    выбора, кроме определения благоприятных перспектив.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="feedback__author">
+                  <img
+                    src="./assets/images/feedbacks/user1.png"
+                    alt="author photo"
+                  />
+                  <div class="feedback__author-info">
+                    <p class="feedback__author-name">
+                      Анастасия <span class="text-colored">Передрягова</span>
+                    </p>
+                    <p class="feedback__author-job">Профессиональный сварщик</p>
+                  </div>
+                </div>
+              </li>
+              <li class="feedback slide">
+                <div class="feedback__text">
+                  <p class="feedback__content">
+                    С учётом сложившейся международной обстановки, новая
+                    модель организационной деятельности не даёт нам иного
+                    выбора, кроме определения благоприятных перспектив.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="feedback__author">
+                  <img
+                    src="./assets/images/feedbacks/user2.png"
+                    alt="author photo"
+                  />
+                  <div class="feedback__author-info">
+                    <p class="feedback__author-name">
+                      Иван <span class="text-colored">Васильев</span>
+                    </p>
+                    <p class="feedback__author-job">Актер</p>
+                  </div>
+                </div>
+              </li>
+              <li class="feedback slide">
+                <div class="feedback__text">
+                  <p class="feedback__content">
+                    С учётом сложившейся международной обстановки, новая
+                    модель организационной деятельности не даёт нам иного
+                    выбора, кроме определения благоприятных перспектив.
+                  </p>
+                  <a href="#">Читать подробнее</a>
+                </div>
+                <div class="feedback__author">
+                  <img
+                    class="feedback__user-icon"
+                    src="./assets/images/icons/user.svg"
+                    alt="author photo"
+                  />
+                  <div class="feedback__author-info">
+                    <p class="feedback__author-name">
+                      Денис<span class="text-colored"> Денискович</span>
+                    </p>
+                    <p class="feedback__author-job">Строитель</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculate none">
+        <div class="container calculate__container">
+          <h2 class="calculate__header">
+            Отправьте проект<br />
+            для расчёта стоимости дома
+          </h2>
+
+          <form
+            action="#"
+            class="calculate__form form"
+            name="calculate-form"
+            method="POST"
+          >
+            <div class="form__item">
+              <label for="calculate-phone">
+                <span class="form__item-header">Ваш телефон</span>
+                <span class="form__item-phone">
+                  <input
+                    class="input-phone"
+                    type="text"
+                    id="calculate-phone"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label for="calculate-email">
+                <span class="form__item-header">Ваша почта</span>
+                <span class="form__item-email">
+                  <input
+                    class="input-email"
+                    type="email"
+                    id="calculate-email"
+                    placeholder="example@mail.com"
+                  />
+                </span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label for="calculate-file">
+                <span class="form__item-header">Прикрепите проект</span>
+                <span class="input-file-border">
+                  <span class="form__item-file">
+                    <input
+                      class="input-file"
+                      type="file"
+                      id="calculate-file"
+                      accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"
+                    />
+                    <span>Загрузите файл</span>
+                  </span>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="button form__button">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="geography none">
+        <h2 class="geography__header">География работы</h2>
+        <p class="geography__text">
+          Наши услуги доступны по всей России и ближайшему зарубежью, включая
+          Египет, Иран, Ирак, Турцию и европейские страны.
+        </p>
+        <img
+          class="geography__map"
+          src="./assets/images/georgaphy/geography_map.svg"
+          alt="map"
+        />
+      </section>
+
+      <section class="gallery none" id="gallery">
+        <div class="gallery__line-1">
+          <img
+            src="https://avatars.mds.yandex.net/i?id=6e898983a2c66d65ad15f1686de154e9a76550ad-9181168-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=d25e7477ebb7f5c20a418b96500b61e0f098aaac-9107083-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=73a528c5f24eecbef5b82b31d20347acee7f74c6-8984683-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=1c6f4818814b0d88c6c9a19d76410037ca8c1d55-9151390-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=0c633f195aa6d4f5e6770252a32a01c5f3ac16df-9246003-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+
+          <img
+            src="https://avatars.mds.yandex.net/i?id=6e898983a2c66d65ad15f1686de154e9a76550ad-9181168-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=d25e7477ebb7f5c20a418b96500b61e0f098aaac-9107083-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=73a528c5f24eecbef5b82b31d20347acee7f74c6-8984683-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=1c6f4818814b0d88c6c9a19d76410037ca8c1d55-9151390-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=0c633f195aa6d4f5e6770252a32a01c5f3ac16df-9246003-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+        </div>
+        <div class="gallery__line-2">
+          <img
+            src="https://avatars.mds.yandex.net/i?id=9aff848267d8b8ea8cd24814de973f1dcac90e57-9147160-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=69126da09bd732b93384eb7557e57fb86301044d-9066167-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=05b06a69d21e6525fd11a61fb4570f100fcf4d47-9144733-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=4c68dd5e95daeeed2b7f8d4d311f7a119863575d-9229153-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=219c8542691f7490893086018c0b18df9ae98902-9147461-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=9aff848267d8b8ea8cd24814de973f1dcac90e57-9147160-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=69126da09bd732b93384eb7557e57fb86301044d-9066167-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=05b06a69d21e6525fd11a61fb4570f100fcf4d47-9144733-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=4c68dd5e95daeeed2b7f8d4d311f7a119863575d-9229153-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+          <img
+            src="https://avatars.mds.yandex.net/i?id=219c8542691f7490893086018c0b18df9ae98902-9147461-images-thumbs&n=13"
+            alt="пример деревянного дома"
+          />
+        </div>
+      </section>
+
+      <section class="contacts none">
+        <div class="container contacts__container">
+          <div class="contacts__text">
+            <h2 class="contacts__header">Контакты</h2>
+            <div class="contacts__info">
+              <p class="contacts__item">
+                <span class="icon icon-big icon-phone"></span
+                ><a href="tel:+78005553535">+7 800 555 35 35</a>
+              </p>
+              <p class="contacts__item">
+                <span class="icon icon-big icon-email"></span
+                ><a href="mailto:">company@mail.com</a>
+              </p>
+              <p class="contacts__item">
+                <span class="icon icon-big icon-map"></span
+                ><a href="#"
+                  >г. Москва, ул. Московская, д 26, помещение 5, офис 404</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <form
+            action="#"
+            class="contacts__form form"
+            name="contacts-form"
+            method="POST"
+          >
+            <h3 class="contacts__form-header">Форма обратной связи</h3>
+            <div class="form__item">
+              <label for="contacts-phone">
+                <span class="form__item-header">Ваш телефон</span>
+                <span class="form__item-phone contacts__form-item-phone">
+                  <input
+                    class="input-phone"
+                    type="text"
+                    id="contacts-phone"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label for="contacts-email">
+                <span class="form__item-header">Ваша почта</span>
+                <span class="form__item-email">
+                  <input
+                    class="input-email"
+                    type="email"
+                    id="contacts-email"
+                    placeholder="example@mail.com"
+                  />
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="button form__button">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer none1">
+      <div class="container footer__container">
+        <div class="logo-block logo-block_footer">
+          <img
+            src="./assets/images/icons/timeless-logo.svg"
+            alt="logo"
+            class="logo__img"
+          />
+          <p class="logo__slogan">
+            <strong>С&nbsp;любовью</strong> из&nbsp;Сибири&nbsp;
+            <img src="./assets/images/icons/heart.svg" alt="heart" />
+          </p>
+        </div>
+
+        <p class="phone-block">
+          <span class="icon icon-small icon-phone"></span
+          ><a href="tel:+79623134056" class="phone-link">+7 (962) 313-40-56</a>
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="activity none">
-    <div class="container activity__container">
-      <h2 class="activity__header">Сфера деятельности</h2>
-
-      <ul class="activity__list">
-        <li class="activity__item">
-          <img src="./assets/images/icons/house.svg" alt="icon house" class="icon__activity">
-          <h4>Строительство</h4>
-          <p>деревянных домов и бань</p>
-        </li>
-        <li class="activity__item">
-          <img src="./assets/images/icons/log.svg" alt="wooden log" class="icon__activity">
-          <h4>Производство</h4>
-          <p>домокомплектов из оцилиндрованного бревна</p>
-        </li>
-        <li class="activity__item">
-          <img src="./assets/images/icons/carcass.svg" alt="carcass" class="icon__activity">
-          <h4>Каркасное домостроени</h4>
-          <p>различных технологий</p>
-        </li>
-        <li class="activity__item">
-          <img src="./assets/images/icons/bricks.svg" alt="bricks" class="icon__activity">
-          <h4>Дополнительные услуги:</h4>
-          <p class="smaller-text">фундамент, отделка, кровля, инженерные системы, ландшафтный дизайн</p>
-        </li>
-      </ul>
-    </div>
-
-    <img class="activity__image" src="./assets/images/activity/house2.png" alt="wooden house">
-  </section>
-
-  <section class="feedbacks none">
-    <div class="container feedbacks__container">
-      <div class="feedbacks__header-zone">
-        <h2 class="feedbacks__header">Отзывы клиентов</h2>
-        <div class="feedbacks__buttons">
-          <button class="btn-prev" type="button"></button>
-          <button class="btn-next" type="button"></button>
-        </div>
-      </div>
-
-      <ul class="feedbacks__list">
-        <li class="feedback blur">
-          <div class="feedback__text">
-            <p class="feedback__content">С учётом сложившейся международной обстановки, новая модель организационной
-              деятельности не даёт нам иного выбора, кроме определения благоприятных перспектив.</p>
-            <a href="#">Читать подробнее</a>
-          </div>
-          <div class="feedback__author">
-            <img class="feedback__user-icon" src="./assets/images/icons/user.svg" alt="author photo">
-            <div class="feedback__author-info">
-              <p class="feedback__author-name">Денис<span class="text-colored"> Денискович</span></p>
-              <p class="feedback__author-job">Строитель</p>
-            </div>
-          </div>
-        </li>
-        <li class="feedback">
-          <div class="feedback__text">
-            <p class="feedback__content">С учётом сложившейся международной обстановки, новая модель организационной
-              деятельности не даёт нам иного выбора, кроме определения благоприятных перспектив.</p>
-            <a href="#">Читать подробнее</a>
-          </div>
-          <div class="feedback__author">
-            <img src="./assets/images/feedbacks/user1.png" alt="author photo">
-            <div class="feedback__author-info">
-              <p class="feedback__author-name">Анастасия <span class="text-colored">Передрягова</span></p>
-              <p class="feedback__author-job">Профессиональный сварщик</p>
-            </div>
-          </div>
-        </li>
-        <li class="feedback">
-          <div class="feedback__text">
-            <p class="feedback__content">С учётом сложившейся международной обстановки, новая модель организационной
-              деятельности не даёт нам иного выбора, кроме определения благоприятных перспектив.</p>
-            <a href="#">Читать подробнее</a>
-          </div>
-          <div class="feedback__author">
-            <img src="./assets/images/feedbacks/user2.png" alt="author photo">
-            <div class="feedback__author-info">
-              <p class="feedback__author-name">Иван <span class="text-colored">Васильев</span></p>
-              <p class="feedback__author-job">Актер</p>
-            </div>
-          </div>
-        </li>
-        <li class="feedback">
-          <div class="feedback__text">
-            <p class="feedback__content">С учётом сложившейся международной обстановки, новая модель организационной
-              деятельности не даёт нам иного выбора, кроме определения благоприятных перспектив.</p>
-            <a href="#">Читать подробнее</a>
-          </div>
-          <div class="feedback__author">
-            <img class="feedback__user-icon" src="./assets/images/icons/user.svg" alt="author photo">
-            <div class="feedback__author-info">
-              <p class="feedback__author-name">Денис<span class="text-colored"> Денискович</span></p>
-              <p class="feedback__author-job">Строитель</p>
-            </div>
-          </div>
-        </li>
-        <li class="feedback blur">
-          <div class="feedback__text">
-            <p class="feedback__content">С учётом сложившейся международной обстановки, новая модель организационной
-              деятельности не даёт нам иного выбора, кроме определения благоприятных перспектив.</p>
-            <a href="#">Читать подробнее</a>
-          </div>
-          <div class="feedback__author">
-            <img src="./assets/images/feedbacks/user1.png" alt="author photo">
-            <div class="feedback__author-info">
-              <p class="feedback__author-name">Анастасия <span class="text-colored">Передрягова</span></p>
-              <p class="feedback__author-job">Профессиональный сварщик</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-
-  </section>
-
-  <section class="calculate none">
-    <div class="container">
-      <h2 class="calculate__header">Отправьте проект<br> для расчёта стоимости дома</h2>
-
-      <form action="#" class="calculate__form form" name="calculate-form" method="POST">
-        <div class="form__item">
-          <label for="calculate-phone">
-            <span class="form__item-header">Ваш телефон</span>
-            <span class="form__item-phone">
-              <input class="input-phone" type="text" id="calculate-phone" placeholder="+7 (___) ___-__-__">
-            </span>
-          </label>
-        </div>
-        <div class="form__item">
-          <label for="calculate-email">
-            <span class="form__item-header">Ваша почта</span>
-            <span class="form__item-email">
-              <input class="input-email" type="email" id="calculate-email" placeholder="example@mail.com">
-            </span>
-          </label>
-        </div>
-        <div class="form__item">
-          <label for="calculate-file">
-            <span class="form__item-header">Прикрепите проект</span>
-            <span class="input-file-border">
-              <span class="form__item-file">
-                <input class="input-file" type="file" id="calculate-file" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
-                <span>Загрузите файл</span>
-              </span>
-            </span>
-          </label>
-        </div>
-        
-        <button type="submit" class="button form__button">Оставить заявку</button>
-      </form>
-    </div>
-  </section>
-
-  <section class="geography none">
-    <h2 class="geography__header">География работы</h2>
-    <p class="geography__text">Наши услуги доступны по всей России и ближайшему зарубежью, включая Египет, Иран, Ирак, Турцию и европейские страны.</p>
-    <img class="geography__map" src="./assets/images/temporary/reography_temporary.png" alt="map">
-  </section>
-
-  <section class="gallery none">
-    <div class="gallery__line-1">
-      <img src="https://avatars.mds.yandex.net/i?id=6e898983a2c66d65ad15f1686de154e9a76550ad-9181168-images-thumbs&n=13" alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=d25e7477ebb7f5c20a418b96500b61e0f098aaac-9107083-images-thumbs&n=13" alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=73a528c5f24eecbef5b82b31d20347acee7f74c6-8984683-images-thumbs&n=13" alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=1c6f4818814b0d88c6c9a19d76410037ca8c1d55-9151390-images-thumbs&n=13" alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=0c633f195aa6d4f5e6770252a32a01c5f3ac16df-9246003-images-thumbs&n=13" alt="пример деревянного дома">
-    </div>
-    <div class="gallery__line-2">
-      <img src="https://avatars.mds.yandex.net/i?id=9aff848267d8b8ea8cd24814de973f1dcac90e57-9147160-images-thumbs&n=13"
-        alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=69126da09bd732b93384eb7557e57fb86301044d-9066167-images-thumbs&n=13"
-        alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=05b06a69d21e6525fd11a61fb4570f100fcf4d47-9144733-images-thumbs&n=13"
-        alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=4c68dd5e95daeeed2b7f8d4d311f7a119863575d-9229153-images-thumbs&n=13"
-        alt="пример деревянного дома">
-      <img src="https://avatars.mds.yandex.net/i?id=219c8542691f7490893086018c0b18df9ae98902-9147461-images-thumbs&n=13"
-        alt="пример деревянного дома">
-    </div>
-  </section>
-
-  <section class="contacts none">
-    <div class="container contacts__container">
-      <div class="contacts__text">
-        <h2 class="contacts__header">Контакты</h2>
-        <div class="contacts__info">
-          <p class="contacts__item"><span class="icon icon-big icon-phone"></span><a href="tel:+78005553535">+7 800 555 35 35</a></p>
-          <p class="contacts__item"><span class="icon icon-big icon-email"></span><a href="mailto:">company@mail.com</a></p>
-          <p class="contacts__item"><span class="icon icon-big icon-map"></span><a href="#">г. Москва, ул. Московская, д 26, помещение 5, офис 404</a></p>
-        </div>
-      </div>
-
-      <form action="#" class="contacts__form form" name="contacts-form" method="POST">
-        <h3 class="contacts__form-header">Форма обратной связи</h3>
-        <div class="form__item">
-          <label for="contacts-phone">
-            <span class="form__item-header">Ваш телефон</span>
-            <span class="form__item-phone contacts__form-item-phone">
-              <input class="input-phone" type="text" id="contacts-phone" placeholder="+7 (___) ___-__-__">
-            </span>
-          </label>
-        </div>
-        <div class="form__item">
-          <label for="contacts-email">
-            <span class="form__item-header">Ваша почта</span>
-            <span class="form__item-email">
-              <input class="input-email" type="email" id="contacts-email" placeholder="example@mail.com">
-            </span>
-          </label>
-        </div>
-
-        <button type="submit" class="button form__button">Оставить заявку</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer none">
-    <div class="container">
-      <div class="logo-line">
-        <div class="logo-block">
-          <img src="./assets/images/icons/timeless-logo.svg" alt="logo" class="logo__img">
-          <p class="logo__slogan"><strong>С любовью</strong><br> из Сибири <img src="./assets/images/icons/heart.svg"
-              alt="heart"></p>
-        </div>
-      
-        <p class="phone-block"><span class="icon icon-small icon-phone"></span><a href="tel:+79623134056"
-            class="phone-link">+7 (962) 313-40-56</a></p>
-      </div>
-    </div>
-  </footer>
-  
-</body>
+    <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/slider.js"></script>
+  </body>
 </html>

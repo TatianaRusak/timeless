@@ -7,4 +7,10 @@
   @include font(20px, 122%, 500, $color: $color-light);
   padding: 23px 20px;
   width: 100%;
+  transition: all 0.3s ease-in;
+  &:hover {
+      background: radial-gradient(104.03% 1778.21% at 36.2% 30%, rgba(255, 255, 255, 0.4) 0%, rgba(204, 160, 93, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      , darken(#55824B, 8%) ;
+  }
 }

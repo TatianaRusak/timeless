@@ -1,16 +1,38 @@
 .about {
-  background: url("../images/about/about-fon.jpg") center center/ cover no-repeat;
+  min-height: 500px;
   padding: 144px 0 200px;
-  mask: url("../images/ragged-lines/ragged-line-guarantee-top.svg") center top / 100% no-repeat;
+  margin-top: 20px;
+  background: linear-gradient(to left, rgba(36, 43, 37, 0.7) 0%, rgba(36, 40, 43, 0.00) 100%),
+    url("../images/about/about-fon.jpg") center center/ cover no-repeat;
+  mask: url('../images/ragged-lines/ragged-line-top1.svg') center top / 100% no-repeat,
+  linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+  @media (max-width: 767.98px) {
+    padding: 60px 0 200px;
+    min-height: 800px;
+    background: url("../images/about/about-fon-sm.jpg") center/ cover no-repeat;
+    mask: url('../images/ragged-lines/ragged-line-top1.svg') center top / 100% no-repeat,
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 5%, rgba(0, 0, 0, 1) 100%);
+  }
+  @media (max-width: 479.98px) {
+    min-height: 600px;
+    padding: 50px 0 50px;
+    background: url("../images/about/about-fon-sm.jpg") center/ cover no-repeat;
+  }
   &__container {
     display: flex;
     flex-direction: column;
     align-items: end;
   }
   &__content {
-    max-width: 560px;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 959.98px) {
+      max-width: 70%;
+    }
+    @media (max-width: 767.98px) {
+      max-width: 100%;
+    }
   }
   &__header {
     color: $color-light;
@@ -19,5 +41,9 @@
   }
   &__text {
     @include font(18px, 33px, $color: $color-light);
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 1.4em;
+    }
   }
 }

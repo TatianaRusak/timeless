@@ -1,10 +1,20 @@
 .feedbacks {
   background: $color-primary-bg-darker;
+  min-height: 550px;
   padding: 153px 0 160px;
-  min-height: 360px;
   margin-top: -145px;
-    overflow-x: hidden;
-    mask: url("../images/ragged-lines/ragged-line-feedbacks-top.svg") center top / 100% no-repeat;
+  overflow-x: hidden;
+  transition: all 0.5s;
+    mask: url('../images/ragged-lines/ragged-line-feedbacks-top.svg') center top / 100% no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+  @media (max-width: 639.98px) {
+    padding: 100px 0 160px;
+    mask: url('../images/ragged-lines/ragged-line-feedbacks-top.svg') center top / 100% no-repeat,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 5%, rgba(0, 0, 0, 1) 100%);
+  }
+  @media (max-width: 479.98px) {
+    padding: 80px 0 160px;
+  }
   &__header-zone {
     display: flex;
     flex-direction: row;
@@ -13,25 +23,78 @@
   &__header {
     margin: 0;
   }
+  .slider {
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: calc($slide-width * $slide-count);  // количество слайдов
+      height: 100%;
+      top: 0;
+      backdrop-filter: blur(3px);
+      z-index: 2;
+    }
+    &::before {
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      left: 50%;
+      transform: translateX(50%);
+    }
+
+  }
+
+  .wrapper {
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
   &__list {
     position: relative;
     margin: 0 auto;
     list-style: none;
     display: flex;
     justify-content: center;
+    column-gap: $feedback-gap;
     margin-top: 20px;
+    scroll-behavior: smooth;
+    @media (max-width: 1199.98px) {
+      justify-content: start;
+      margin-left: calc( $slide-width * $slide-count * -1);
+      padding-left: 30px;
+    }
+    @media (max-width: 479.98px) {
+      column-gap: 10px;
+      margin-left: calc( 300px * $slide-count * -1);
+      padding-left: 0px;
+    }
+    @media (max-width: 359.98px) {
+      column-gap: 10px;
+      margin-left: calc( 280px * $slide-count * -1);
+      padding-left: 60px;
+    }
   } 
 }
 
 .feedback {
-  min-width: 360px;
-  height: 293px;
-  margin-right: 40px;
-  &:last-of-type {
-    margin-right: 0;
+  width: $feedback-width;
+  min-width: $feedback-width;
+  max-height: 295px;
+  transition: all 0.5s;
+
+  @media (max-width: 479.98px) {
+    width: 300px;
+    min-width: 300px;
+    max-height: 300px;
   }
-  &.blur {
-    filter: blur(5px);
+  @media (max-width: 359.98px) {
+    width: 260px;
+    min-width: 260px;
   }
   &__text {
     background: $color-primary-bg-lighter;
@@ -46,6 +109,19 @@
   &__content {
     @include font (14px, 22px);
     margin-bottom: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-clamp: 5;
+    box-orient: vertical;
+    @media (max-width: 479.98px) {
+      -webkit-line-clamp: 6;
+      line-clamp: 6;
+    }
   }
   &__author {
     display: flex;
@@ -71,23 +147,48 @@
 }
 
 .feedbacks__buttons {
-  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-30px);
+  @media (max-width: 639.98px) {
+    bottom: -400px;
+    top: auto;
+    left: 0;
+    transform: translate(30px, 0);
+  }
 
 }
-
-.btn-prev {
-  width: 40px;
-  height: 40px;
-  background: url("../images/icons/arrow.svg") center center / 26px no-repeat
-            $color-primary-bg-lighter;
-  border-radius: 8px;
-  margin-right: 10px;
-}
-
+.btn-prev,
 .btn-next {
   width: 40px;
   height: 40px;
-  background: url("../images/icons/arrow-white.svg") center center / 26px no-repeat
-            $color-primary-light;
   border-radius: 8px;
+  transition: all 0.2s ease-in;
+}
+.btn-prev {
+  background: url("../images/icons/arrow-dark-left.svg") center center / 26px no-repeat
+            $color-primary-bg-lighter;
+  margin-right: 10px;
+  &:hover {
+    background: url("../images/icons/arrow-white-left.svg") center center / 26px no-repeat
+    $color-primary-light;
+  }
+  &:active {
+    background: url("../images/icons/arrow-white-left.svg") center center / 26px no-repeat
+    darken(#55824B, 8%);
+  }
+}
+
+.btn-next {
+  background: url("../images/icons/arrow-dark-right.svg") center center / 26px no-repeat
+            $color-primary-bg-lighter;
+  &:hover {
+    background: url("../images/icons/arrow-white-right.svg") center center / 26px no-repeat
+    $color-primary-light;
+  }
+  &:active {
+    background: url("../images/icons/arrow-white-right.svg") center center / 26px no-repeat
+    darken(#55824B, 8%);
+  }
 }

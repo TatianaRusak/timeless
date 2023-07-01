@@ -1,30 +1,29 @@
 .advantages {
-  background: url("../images/advantages/branch-fon.png") right no-repeat;
-  padding-top: 110px;
-  padding-bottom: 25px;
+  background: url("../images/advantages/branch-fon.png") right center/ auto no-repeat;
+  padding: 28px 0;
   position: relative;
+  @media screen and (max-width: 768px) {
+    background-position: 110% center;
+  }
   &__header {
-    margin-bottom: 90px;
+    margin: 82px 0 90px;
+    text-align: center;
   }
   &__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
+        column-gap: 40px;
+    row-gap: 80px;
   }
   .advantage {
     position: relative;
     width: 260px;
     min-height: 237px;
     padding: 129px 20px 36px;
-    margin-bottom: 80px;
-    margin-right: 40px;
     background: rgba(142, 169, 136, 0.1);
     border-radius: 15px;
-    &:nth-of-type(4n+4),
-    &:last-of-type {
-      margin-right: 0;
-    }
     &__img-wrapper {
       position: absolute;
       top: 0;

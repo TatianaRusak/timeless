@@ -1,25 +1,61 @@
 .guarantees {
-  background: url("../images/guarantees/guarantees-fon.jpg") center/cover no-repeat;
   min-height: 630px;
-  padding: 120px 0;
+  padding: 120px 0 70px;
   margin-top: -115px;
-  mask: url("../images/ragged-lines/ragged-line-guarantee-top.svg") center top / 100% no-repeat;
-  &__content-wrapper {
-    width: 53%;
+  background: url("../images/guarantees/guarantees-fon.jpg") center top /cover no-repeat;
+  mask: url('../images/ragged-lines/ragged-line-top1.svg') center top / 100% no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 5%, rgba(0, 0, 0, 1) 100%);
+  @media screen and (max-width: 960px) {
+    padding-top: 100px;
+    background: linear-gradient(100deg, #242B25 0%, rgba(36, 40, 43, 0.5) 100%), 
+      url("../images/guarantees/guarantees-fon.jpg") center top /cover no-repeat;
   }
-  &__header {
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(100deg, #242B25 0%, rgba(36, 40, 43, 0.5) 100%), 
+      url("../images/guarantees/guarantees-fon.jpg") 60% top /cover no-repeat;
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 70px;
+    background: linear-gradient(100deg, #242B25 0%, rgba(36, 40, 43, 0.5) 100%), 
+      url("../images/guarantees/guarantees-fon.jpg") 65% top /cover no-repeat;
+  }
+  &__title {
+    width: 53%;
     text-align: left;
     margin: 0 0 23px;
     color: $color-light;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
   }
   .deadlines-big {
     display: flex;
     list-style: none;
+    column-gap: 15px;
     margin-bottom: 54px;
+    @media screen and (max-width: 1200px) {
+      column-gap: 10px;
+    }
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+      row-gap: 25px;
+    }
     &__item {
-      flex: 1;
-      margin-right: 15px;
+      min-width: 18%;
+      width: min-content;
       @include font(16px, 27px, $color: $color-light);
+      @media screen and (max-width: 1200px) {
+        min-width: 20%;
+      }
+      @media screen and (max-width: 960px) {
+        min-width: 33%;
+      }
+      @media screen and (max-width: 640px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        column-gap: 15px;
+      }
       span {
         display: block;
         @include font(64px, 75px, 900);
@@ -28,6 +64,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        width: max-content;
+        @media screen and (max-width: 480px) {
+          font-size: 48px;
+        }
       }
     }
   }
@@ -35,10 +75,14 @@
     @include font(16px, 26px, $color: $color-light);
     list-style: none;
     display: flex;
+    column-gap: 70px;
     margin-left: 30px;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
     &__item {
       position: relative;
-      margin-right: 70px;
       &::before {
         content: url("../images/icons/check.svg");
         position: absolute;

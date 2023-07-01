@@ -1,0 +1,73 @@
+.logo-block{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  .logo__img {
+    width: 160px;
+    padding-right: 27px;
+    flex-basis: 2;
+  }
+  .logo__slogan {
+    width: 150px;
+    @include font(16px, 19px, 400, $color: $color-light);
+    font-family: 'Proxima Nova';
+    letter-spacing: 0.03em;
+    & > img {
+      transform: translateY(4px);
+    }
+  }
+}
+
+@keyframes logoMove {
+  
+}
+
+.logo-block_header {
+  position: absolute;
+  transition: all 0.3s ease-in;
+  z-index: 20;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: start;
+  }
+  .logo__slogan {
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+}
+
+.logo-block_header.aside-menu-open {
+  transform: translateX(30px);
+  .logo__slogan {
+    color: $color-text;
+  }
+}
+
+
+.logo-block_footer {
+  display: flex;
+  .logo__slogan {
+    width: 150px;
+    @media screen and (max-width: 640px) {
+      width: 110px;
+    }
+  }
+}
+
+.phone-block {
+  display: flex;
+  align-items: center;
+  &_header {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+  .phone-link{
+    font-family: 'Proxima Nova';
+    @include font(20px, 24px, 600, $color: $color-light);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+}

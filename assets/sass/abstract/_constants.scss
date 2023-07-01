@@ -1,12 +1,18 @@
-$color-primary-dark: #55824B;
-$color-primary-light: #8EA988;
-$color-primary-bg-darker: #E8EEE7;
-$color-primary-bg-lighter: #F2F5F1;
+$color-primary-dark: #55824b;
+$color-primary-light: #8ea988;
+$color-primary-bg-darker: #e8eee7;
+$color-primary-bg-lighter: #f2f5f1;
 $color-light: #ffffff;
 
-$color-text: #1F231E;
+$color-text: #1f231e;
 
 $content-width: 1197px;
 $tablet-width: 768px;
 $mobile-big-width: 414px;
 $mobile-small-width: 320px;
+
+// feedback
+$feedback-width: 360px;
+$feedback-gap: 40px;
+$slide-width: calc($feedback-width + $feedback-gap); // + column-gap
+$slide-count: 3; //width + column-gap

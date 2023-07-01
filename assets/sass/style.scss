@@ -8,12 +8,13 @@
 @import "./base/base";
 
 @import "./components/icons";
-@import "./components/logo-line";
+@import "./components/blocks";
 @import "./components/burger";
 @import "./components/buttons";
 @import "./components/form";
 @import "./components/navigation";
 
+@import "./layout/header";
 @import "./layout/promo";
 @import "./layout/advantages";
 @import "./layout/construction";
