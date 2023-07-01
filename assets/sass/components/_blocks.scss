@@ -3,7 +3,7 @@
   flex-direction: row;  
   align-items: center;
   .logo__img {
-    width: 160px;
+    width: 190px;
     padding-right: 27px;
     flex-basis: 2;
   }
@@ -26,12 +26,12 @@
   position: absolute;
   transition: all 0.3s ease-in;
   z-index: 20;
-  @media screen and (max-width: 480px) {
+  @media (max-width: 479.99px) {
     flex-direction: column;
     align-items: start;
   }
   .logo__slogan {
-    @media screen and (max-width: 480px) {
+    @media (max-width: 479.99px) {
       width: 100%;
       margin-top: 16px;
     }
@@ -50,7 +50,7 @@
   display: flex;
   .logo__slogan {
     width: 150px;
-    @media screen and (max-width: 640px) {
+    @media (max-width: 639.99px) {
       width: 110px;
     }
   }

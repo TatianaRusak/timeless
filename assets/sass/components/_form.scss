@@ -5,32 +5,6 @@ background: $color-primary-bg-darker;
 		display: flex;
 		flex-direction: column;
 	}
-	&__item-phone {
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			width: 16px;
-			height: 100%;
-			top: 0;
-			left: 20px;
-			opacity: 0.5;
-			background: url("../images/icons/phone.svg") center / 18px no-repeat;
-		}
-	}
-	&__item-email {
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			width: 16px;
-			height: 100%;
-			top: 0;
-			left: 20px;
-			opacity: 0.5;
-			background: url("../images/icons/envelope.svg") center / 18px no-repeat;
-		}
-	}
 	.input-phone,
 	.input-email,
 	&__item-file {
@@ -38,24 +12,22 @@ background: $color-primary-bg-darker;
 		height: 60px;
 		width: 100%;
 		border-radius: 8px;
-		@include font (16px, 19px, 500);
-		// color: rgba(31, 35, 30, 0.5);
+		@include font (16px, 19px, 400);
 		padding: 20px 20px 20px 48px;
-		background: $color-primary-bg-lighter;
+	}
+	.input-phone {
+		background: url("../images/icons/phone.svg") bottom 50% left 16px / 18px no-repeat,
+					$color-primary-bg-lighter;
+	}
+	.input-email {
+		background: url("../images/icons/envelope.svg") bottom 50% left 16px / 18px no-repeat,
+					$color-primary-bg-lighter;
 	}
 	&__item-file {
 		position: relative;
 		padding: 0;
-		&::before {
-			content: '';
-			position: absolute;
-			width: 16px;
-			height: 100%;
-			top: 0;
-			left: 20px;
-			opacity: 0.5;
-			background: url("../images/icons/paperclip.svg") center / 18px no-repeat;
-		}
+		background: url("../images/icons/paperclip.svg") bottom 50% left 16px / 18px no-repeat,
+			$color-primary-bg-lighter;
 		&::after {
 			content: '';
 			position: absolute;

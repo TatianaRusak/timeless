@@ -5,6 +5,18 @@
   margin-top: -100px;
   mask: url('../images/ragged-lines/ragged-line-gifts-top.svg') center top / 100% no-repeat,
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+  @media (max-width: 989.98px) {
+    mask: url('../images/ragged-lines/ragged-line-gifts-top.svg') center top / 100% no-repeat,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 3%, #000000 3%, rgba(0, 0, 0, 1) 100%);
+  }
+  @media (max-width: 639.98px) {
+    margin-top: -55px;
+  }
+  @media (max-width: 479.98px) {
+    padding-top: 10px;
+    mask: url('../images/ragged-lines/ragged-line-gifts-top.svg') center top / 100% no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, #000000 1%, rgba(0, 0, 0, 1) 100%);
+  }
   &__container{
     @media (max-width: 479.98px) {
       padding: 0;
@@ -39,16 +51,19 @@
   &__content {
     flex: 1;
     padding: 50px 0 65px 28px;
-    @media (max-width: 479.98px) {
-      padding: 50px 0 65px 0;
+    @media (max-width: 959.98px) {
+      padding: 10px 0 65px 0;
     }
   }
   &__image-wrapper {
     display: flex;
+    width: 512px;
     align-items: center;
+    max-width: fit-content;
   }
   &__image {
     width: 100%;
+    object-fit: contain;
   }
   &__text {
     margin-bottom: 20px;

@@ -2,10 +2,9 @@
 
 @import "./abstract/constants";
 @import "./abstract/mixins";
-@import "./abstract/placeholders";
-@import "./abstract/animations";
 
 @import "./base/base";
+@import "./base/animations";
 
 @import "./components/icons";
 @import "./components/blocks";

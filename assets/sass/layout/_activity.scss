@@ -3,22 +3,65 @@
   min-height: 915px;
   padding: 100px 0 60px;
   margin-top: -138px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 16%, rgba(255, 255, 255, 0.9) 100%),
-        url("../images/activity/activity-fon.png") center bottom / contain no-repeat;
-  mask: url('../images/ragged-lines/ragged-line-gifts-top.svg') center top / 100% no-repeat,
-        linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+  overflow-x: hidden;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 16%,
+      rgba(255, 255, 255, 0.9) 100%
+    ),
+    url("../images/activity/activity-fon.png") center bottom / contain no-repeat;
+  mask: url("../images/ragged-lines/ragged-line-gifts-top.svg") center top /
+      100% no-repeat,
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      #000000 10%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  @media (max-width: 1399.98px) {
+    padding-bottom: 500px;
+  }
+  @media (max-width: 1259.98px) {
+    mask: url("../images/ragged-lines/ragged-line-gifts-top.svg") center top /
+        100% no-repeat,
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 5%,
+        #000000 5%,
+        rgba(0, 0, 0, 1) 100%
+      );
+  }
+  @media (max-width: 639.98px) {
+    mask: url("../images/ragged-lines/ragged-line-gifts-top.svg") center top /
+        100% no-repeat,
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 2%,
+        #000000 2%,
+        rgba(0, 0, 0, 1) 100%
+      );
+  }
+  @media (max-width: 479.98px) {
+    padding-bottom: 430px;
+  }
   &__container {
     display: flex;
     margin-top: 166px;
+    column-gap: 40px;
     @media (max-width: 1399.98px) {
       flex-direction: column;
       row-gap: 30px;
-      align-items: center;
+      align-items: start;
+    }
+    @media (max-width: 1199.98px) {
+      margin-top: 100px;
+    }
+    @media (max-width: 767.98px) {
+      margin-top: 40px;
     }
   }
-  &__header {
+  &__title {
     text-align: left;
-    margin-right: 40px;
   }
   &__list {
     display: flex;
@@ -27,7 +70,7 @@
     justify-content: end;
     gap: 40px;
     @media (max-width: 1399.98px) {
-      justify-content: center;
+      justify-content: start;
     }
   }
   &__item {
@@ -37,7 +80,7 @@
     border-radius: 15px;
     padding: 33px 40px 26px;
     @media (max-width: 1399.98px) {
-      width: 40%;
+      width: calc(50% - 40px);
     }
     @media (max-width: 767.98px) {
       width: 100%;
@@ -48,24 +91,26 @@
       margin-bottom: 14px;
     }
     p {
-      @include font (20px, 24px);
+      @include font(20px, 24px);
     }
-        .smaller-text {
-          @include font(16px, 19px);
-          margin-top: 6px;
-        }
+    .smaller-text {
+      @include font(16px, 19px);
+      margin-top: 6px;
+    }
   }
-  &__image-wrapper {
+
+  &__image {
+    height: 500px;
     position: absolute;
     left: -16%;
     bottom: 0;
-    @media (max-width: 1399.98px) {
-      position: static;
-      display: block;
-      margin: 0 auto;
+    @media (max-width: 639.98px) {
+      right: 0;
+      left: auto;
     }
-  }
-  &__image {
-    width: 100%;
+    @media (max-width: 479.98px) {
+      right: -45px;
+      height: 390px;
+    }
   }
 }

@@ -13,6 +13,12 @@
 		@media (max-width: 1199.98px) {
 			flex-direction: column;
 			flex-wrap: wrap;
+			margin-left: 150px;
+			margin-right: 150px;
+		}
+		@media (max-width: 991.98px) {
+			margin-left: 0;
+			margin-right: 0;
 		}
 		@media (max-width: 767.98px) {
 			max-height: 100%;
@@ -34,7 +40,6 @@
 			@media (max-width: 1199.98px) {
 				flex-grow: 1;
 				flex-direction: column;
-				// width: max-content;
 				row-gap: 30px;
 			}
 		}

@@ -1,6 +1,6 @@
 .geography {
   padding: 70px 0 40px;
-  &__header {
+  &__title {
     margin-bottom: 15px;
   }
   &__text {
@@ -9,6 +9,7 @@
     @include font(14px, 22px);
     text-align: center;
   }
+  
   &__map {
     display: block;
     width: 90%;

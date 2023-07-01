@@ -9,6 +9,14 @@ function toggleMenu() {
     logoHeader.classList.toggle('aside-menu-open');
 }
 
+
+function closeMenu() { 
+    burger.classList.remove('aside-menu-open');
+    asideMenu.classList.remove('aside-menu-open');
+    logoHeader.classList.remove('aside-menu-open');
+}
+
+
 burger.addEventListener('click', toggleMenu);
 
-navLinks.forEach(card => card.addEventListener('click', toggleMenu));
+navLinks.forEach(card => card.addEventListener('click', closeMenu));

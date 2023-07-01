@@ -1,42 +1,46 @@
 .construction {
   position: relative;
-  min-height: 742px;
-  background: url("../images/construction/forest-fon.png") center bottom/ 100%
-    no-repeat;
+  height: 790px;
+  background: url("../images/construction/forest-fon.png") center bottom/ 200%     no-repeat;
+  padding: 50px 0 50px;
+  @media (max-width: 1199.98px) {
+    height: 1040px;
+  }
+  @media (max-width: 639.98px) {
+    height: 1325px;
+  }
   &__container {
-    min-height: 700px;
     height: 100%;
   }
-  &__header {
+  &__title {
     margin-bottom: 40px;
   }
-  &__house {
+  &__house-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100%;
-    @media (max-width: 1199.98px) {
-      position: static;
-      transform: translateX(0);
-      display: block;
-      margin: -60px auto 0;
-    }
-    @media (max-width: 639.98px) {
-      margin: 10px auto 0;
+    overflow: hidden;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 767.98px) {
+      height: 460px;
     }
   }
+
   &__button {
     position: absolute;
-    right: 0;
-    bottom: 145px;
+    right: 30px;
+    bottom: 195px;
     width: 400px;
+    z-index: 0;
     @media (max-width: 1299.98px) {
       right: 50px;
     }
     @media (max-width: 1199.98px) {
-      bottom: 0;
-      z-index: 1;
+      bottom: -20px;
       left: 50%;
       right: auto;
       transform: translateX(-50%);
@@ -82,7 +86,16 @@
   &__branch-cone {
     position: absolute;
     left: 0;
-    top: -50%;
+    top: -30%;
+    @media (max-width: 1099.98px) {
+      width: 160px;
+    }
+    @media (max-width: 959.98px) {
+      width: 140px;
+    }
+    @media (max-width: 479.98px) {
+      width: 100px;
+    }
   }
 }
 
@@ -190,7 +203,6 @@
   }
   &__number {
     @include font(64px, 75px, 900);
-    // position: absolute;
     background: radial-gradient(
       86.11% 80.07% at 96.3% 47.32%,
       $color-primary-light 0%,

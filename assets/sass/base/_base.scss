@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   font-family: "Public Sans", "Verdana", sans-serif;
   background: $color-primary-bg-lighter;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -26,10 +27,10 @@ h1{
 h2{
   @include font (38px, 45px, 700);
   text-align: center;
-  @media screen and (max-width: 480px) {
+  @media (max-width: 479.99px) {
     font-size: 32px;
   }
-  @media screen and (max-width: 380px) {
+  @media (max-width: 379.99px) {
     font-size: 24px;
     line-height: 1.4em;
   }
@@ -51,4 +52,11 @@ h4{
 
 .none {
   display: none;
+}
+
+.advantages-and-construction__wrapper {
+  background: url("../images/construction/branch-fon-cone.png") center left / 200px no-repeat,
+             $color-primary-bg-lighter;
+  mask: url('../images/ragged-lines/ragged-line-1.svg') center top / 100% no-repeat,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, #000000 15%, rgba(0, 0, 0, 1) 100%);
 }

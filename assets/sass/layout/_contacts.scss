@@ -1,8 +1,8 @@
 .contacts {
-  min-height: 802px;
+  min-height: 818px;
   background: url("../images/contacts/contacts-fon.png") center 60px / 100%
     no-repeat;
-  padding: 52px 0 50px;
+  padding: 65px 0 50px;
   @media (max-width: 1319.98px) {
     background: url("../images/contacts/contacts-fon.png") center bottom / 100%
     no-repeat;
@@ -16,6 +16,9 @@
   }
   @media (max-width: 479.98px) {
     padding: 52px 0 230px;
+  }
+  @media (max-width: 379.98px) {
+    padding: 30px 0 230px;
   }
   &__container {
     display: flex;
@@ -37,7 +40,7 @@
       padding: 0 30px;
     }
   }
-  &__header {
+  &__title {
     margin: 44px 0 57px;
   }
   &__item {
@@ -59,20 +62,19 @@
 .contacts {
   &__form {
     max-width: 460px;
-    // width: 460px;
     padding: 55px 60px 64px;
     flex: 1;
     @media (max-width: 959.98px) {
       max-width: 100%;
     }
   }
-  &__form-header {
+  &__form-title {
     margin-bottom: 24px;
   }
   .form__item {
     margin-bottom: 30px;
   }
-  .form__item-header {
+  .form__item-title {
     display: block;
     margin-bottom: 10px;
   }

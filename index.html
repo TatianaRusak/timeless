@@ -70,7 +70,7 @@
     </header>
 
     <main>
-      <section class="promo none">
+      <section class="promo">
         <div class="container">
           <div class="promo__content">
             <h1 class="promo__title">
@@ -93,10 +93,9 @@
           </div>
         </div>
       </section>
-
-      <section class="advantages none">
+      <section class="advantages">
         <div class="container">
-          <h2 class="advantages__header">Наши преимущества</h2>
+          <h2 class="advantages__title">Наши преимущества</h2>
 
           <ul class="advantages__list">
             <li class="advantage">
@@ -185,14 +184,14 @@
         </div>
       </section>
 
-      <section class="construction none" id="constructions">
+      <section class="construction" id="constructions">
         <div class="container construction__container">
-          <h2 class="construction__header">
+          <h2 class="construction__title">
             Строительство деревянных <br />
             домов и бань
           </h2>
 
-          <ul class="steps">
+          <ol class="steps">
             <li class="steps__item">
               <span class="steps__number num-01">01</span>Создание проекта
             </li>
@@ -217,17 +216,14 @@
                 дизайн</span
               >
             </li>
-          </ul>
-
+          </ol>
           <div class="construction__button">
             <button class="button">Оставить заявку</button>
           </div>
+        </div>
 
-          <img
-            class="construction__house"
-            src="./assets/images/construction/house1.png"
-            alt="wooden house"
-          />
+        <div class="construction__house-wrapper">
+          <img class="construction__house" src="./assets/images/construction/house1.png" alt="wooden house" />
         </div>
         <img
           class="construction__branch-cone"
@@ -236,7 +232,7 @@
         />
       </section>
 
-      <section class="guarantees none" id="guarantees">
+      <section class="guarantees" id="guarantees">
         <div class="container guarantees__container">
           <div class="guarantees__content-wrapper">
             <h2 class="guarantees__title">
@@ -267,7 +263,7 @@
         </div>
       </section>
 
-      <section class="gifts none">
+      <section class="gifts">
         <div class="container gifts__container">
           <h2 class="gifts__title">Подарки и акции</h2>
 
@@ -302,11 +298,9 @@
               </div>
             </li>
             <li class="gifts__item gift">
-              <img
-                src="./assets/images/gifts/plan.png"
-                alt="plan"
-                class="gift__image"
-              />
+              <div class="gift__image-wrapper">
+                <img src="./assets/images/gifts/plan.png" alt="plan" class="gift__image" />
+              </div>
               <div class="gift__content">
                 <div class="gift__text">
                   <p class="gift__condition">
@@ -331,7 +325,7 @@
         </div>
       </section>
 
-      <section class="usage none">
+      <section class="usage">
         <div class="container">
           <h2>Эксплуатация и использование</h2>
 
@@ -379,10 +373,10 @@
         </div>
       </section>
 
-      <section class="about none" id="about">
+      <section class="about" id="about">
         <div class="container about__container">
           <div class="about__content">
-            <h2 class="about__header">О компании Timeless</h2>
+            <h2 class="about__title">О компании Timeless</h2>
             <p class="about__text">
               Мы строим современные и качественные дома из ценных пород
               древесины кедра и лиственницы а также каркасные дома различных
@@ -393,9 +387,9 @@
         </div>
       </section>
 
-      <section class="activity none">
+      <section class="activity">
         <div class="container activity__container">
-          <h2 class="activity__header">Сфера деятельности</h2>
+          <h2 class="activity__title">Сфера деятельности</h2>
 
           <ul class="activity__list">
             <li class="activity__item">
@@ -440,19 +434,13 @@
           </ul>
         </div>
 
-        <div class="activity__image-wrapper">
-          <img
-            class="activity__image"
-            src="./assets/images/activity/house2.png"
-            alt="wooden house"
-          />
-        </div>
+        <img class="activity__image" src="./assets/images/activity/house1.png" alt="wooden house" />
       </section>
 
-      <section class="feedbacks none1">
+      <section class="feedbacks">
         <div class="container feedbacks__container">
-          <div class="feedbacks__header-zone">
-            <h2 class="feedbacks__header">Отзывы клиентов</h2>
+          <div class="feedbacks__title-zone">
+            <h2 class="feedbacks__title">Отзывы клиентов</h2>
           </div>
           <div class="feedbacks__buttons">
             <button id="prev" class="control btn-prev" type="button"></button>
@@ -461,15 +449,16 @@
         </div>
         <div id="slider" class="slider">
           <div class="wrapper">
-            <ul class="feedbacks__list">
-              <li class="feedback slide">
+            <div class="feedbacks__list">
+              <div class="feedback slide">
                 <div class="feedback__text">
                   <p class="feedback__content">
-                    С учётом сложившейся международной обстановки, новая
-                    модель организационной деятельности не даёт нам иного
-                    выбора, кроме определения благоприятных перспектив. С учётом сложившейся международной обстановки, новая
-                    модель организационной деятельности не даёт нам иного
-                    выбора, кроме определения благоприятных перспектив.
+                    С учётом сложившейся международной обстановки, новая модель
+                    организационной деятельности не даёт нам иного выбора, кроме
+                    определения благоприятных перспектив. С учётом сложившейся
+                    международной обстановки, новая модель организационной
+                    деятельности не даёт нам иного выбора, кроме определения
+                    благоприятных перспектив.
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
@@ -485,13 +474,13 @@
                     <p class="feedback__author-job">Профессиональный сварщик</p>
                   </div>
                 </div>
-              </li>
-              <li class="feedback slide">
+              </div>
+              <div class="feedback slide">
                 <div class="feedback__text">
                   <p class="feedback__content">
-                    С учётом сложившейся международной обстановки, новая
-                    модель организационной деятельности не даёт нам иного
-                    выбора, кроме определения благоприятных перспектив.
+                    С учётом сложившейся международной обстановки, новая модель
+                    организационной деятельности не даёт нам иного выбора, кроме
+                    определения благоприятных перспектив.
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
@@ -507,13 +496,13 @@
                     <p class="feedback__author-job">Актер</p>
                   </div>
                 </div>
-              </li>
-              <li class="feedback slide">
+              </div>
+              <div class="feedback slide">
                 <div class="feedback__text">
                   <p class="feedback__content">
-                    С учётом сложившейся международной обстановки, новая
-                    модель организационной деятельности не даёт нам иного
-                    выбора, кроме определения благоприятных перспектив.
+                    С учётом сложившейся международной обстановки, новая модель
+                    организационной деятельности не даёт нам иного выбора, кроме
+                    определения благоприятных перспектив.
                   </p>
                   <a href="#">Читать подробнее</a>
                 </div>
@@ -530,15 +519,15 @@
                     <p class="feedback__author-job">Строитель</p>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+              </div>
           </div>
         </div>
       </section>
 
-      <section class="calculate none">
+      <section class="calculate">
         <div class="container calculate__container">
-          <h2 class="calculate__header">
+          <h2 class="calculate__title">
             Отправьте проект<br />
             для расчёта стоимости дома
           </h2>
@@ -551,33 +540,19 @@
           >
             <div class="form__item">
               <label for="calculate-phone">
-                <span class="form__item-header">Ваш телефон</span>
-                <span class="form__item-phone">
-                  <input
-                    class="input-phone"
-                    type="text"
-                    id="calculate-phone"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </span>
+                <span class="form__item-title">Ваш телефон</span>
+                <input class="input-phone" type="text" id="calculate-phone" placeholder="+7 (___) ___-__-__" />
               </label>
             </div>
             <div class="form__item">
               <label for="calculate-email">
-                <span class="form__item-header">Ваша почта</span>
-                <span class="form__item-email">
-                  <input
-                    class="input-email"
-                    type="email"
-                    id="calculate-email"
-                    placeholder="example@mail.com"
-                  />
-                </span>
+                <span class="form__item-title">Ваша почта</span>
+                <input class="input-email" type="email" id="calculate-email" placeholder="example@mail.com" />
               </label>
             </div>
             <div class="form__item">
               <label for="calculate-file">
-                <span class="form__item-header">Прикрепите проект</span>
+                <span class="form__item-title">Прикрепите проект</span>
                 <span class="input-file-border">
                   <span class="form__item-file">
                     <input
@@ -599,8 +574,8 @@
         </div>
       </section>
 
-      <section class="geography none">
-        <h2 class="geography__header">География работы</h2>
+      <section class="geography">
+        <h2 class="geography__title">География работы</h2>
         <p class="geography__text">
           Наши услуги доступны по всей России и ближайшему зарубежью, включая
           Египет, Иран, Ирак, Турцию и европейские страны.
@@ -612,7 +587,7 @@
         />
       </section>
 
-      <section class="gallery none" id="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__line-1">
           <img
             src="https://avatars.mds.yandex.net/i?id=6e898983a2c66d65ad15f1686de154e9a76550ad-9181168-images-thumbs&n=13"
@@ -700,10 +675,10 @@
         </div>
       </section>
 
-      <section class="contacts none">
+      <section class="contacts">
         <div class="container contacts__container">
           <div class="contacts__text">
-            <h2 class="contacts__header">Контакты</h2>
+            <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__info">
               <p class="contacts__item">
                 <span class="icon icon-big icon-phone"></span
@@ -728,10 +703,10 @@
             name="contacts-form"
             method="POST"
           >
-            <h3 class="contacts__form-header">Форма обратной связи</h3>
+            <h3 class="contacts__form-title">Форма обратной связи</h3>
             <div class="form__item">
               <label for="contacts-phone">
-                <span class="form__item-header">Ваш телефон</span>
+                <span class="form__item-title">Ваш телефон</span>
                 <span class="form__item-phone contacts__form-item-phone">
                   <input
                     class="input-phone"
@@ -744,7 +719,7 @@
             </div>
             <div class="form__item">
               <label for="contacts-email">
-                <span class="form__item-header">Ваша почта</span>
+                <span class="form__item-title">Ваша почта</span>
                 <span class="form__item-email">
                   <input
                     class="input-email"
@@ -764,7 +739,7 @@
       </section>
     </main>
 
-    <footer class="footer none1">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="logo-block logo-block_footer">
           <img
@@ -785,6 +760,7 @@
       </div>
     </footer>
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/slider.js"></script>
   </body>
