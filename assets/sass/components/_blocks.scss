@@ -18,20 +18,16 @@
   }
 }
 
-@keyframes logoMove {
-  
-}
-
 .logo-block_header {
   position: absolute;
   transition: all 0.3s ease-in;
   z-index: 20;
-  @media (max-width: 479.99px) {
+  @media (max-width: 639.99px) {
     flex-direction: column;
     align-items: start;
   }
   .logo__slogan {
-    @media (max-width: 479.99px) {
+    @media (max-width: 639.99px) {
       width: 100%;
       margin-top: 16px;
     }
