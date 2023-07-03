@@ -1,0 +1,31 @@
+@import "./base/normalize";
+
+@import "./abstract/constants";
+@import "./abstract/mixins";
+
+@import "./base/base";
+@import "./base/animations";
+
+@import "./components/icons";
+@import "./components/blocks";
+@import "./components/burger";
+@import "./components/buttons";
+@import "./components/form";
+@import "./components/navigation";
+
+@import "./layout/header";
+@import "./layout/promo";
+@import "./layout/advantages";
+@import "./layout/construction";
+@import "./layout/guarantees";
+@import "./layout/gifts";
+@import "./layout/usage";
+@import "./layout/about";
+@import "./layout/activity";
+@import "./layout/feedbacks";
+@import "./layout/calculate";
+@import "./layout/geography";
+@import "./layout/gallery";
+@import "./layout/contacts";
+@import "./layout/footer";
+

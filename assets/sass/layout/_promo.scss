@@ -1,0 +1,90 @@
+.promo{
+  min-height: 970px;
+  padding: 42px 0;
+  margin-top: -200px;
+  background: url('../images/promo/promo-branch-1.png') center right / 20% no-repeat,
+    url('../images/promo/promo-branch-2.png') 30% 130% / 30% no-repeat,
+    url('../images/promo/promo-house-cutted.png') right 130% / 60% no-repeat,
+    linear-gradient(180deg, #242B25 0%, rgba(36, 43, 37, 0) 40%),
+    url('../images/promo/promo-forest.png') center bottom / cover no-repeat;
+    @media (max-width: 959.99px) {
+      min-height: 1070px;
+      background: url('../images/promo/promo-branch-2.png') 20% 130% / 30% no-repeat,
+        url('../images/promo/promo-house-full.png') 30% 105% / 750px no-repeat,
+        linear-gradient(180deg, #242B25 0%, rgba(36, 43, 37, 0) 40%),
+        url('../images/promo/promo-forest.png') center bottom / cover no-repeat;
+    }
+  &__content{
+    margin-top: 240px;
+    @media (max-width: 959.99px) {
+      margin-top: 140px;
+    }
+  }
+  &__title {
+    width: 75%;
+    margin-bottom: 37px;
+    @media (max-width: 959.99px) {
+      width: 100%;
+      font-size: 42px;
+      line-height: 1.5em;
+    }
+    @media (max-width: 479.99px) {
+      font-size: 32px;
+    }
+  }
+
+  .offer{
+    position: relative;
+    width: 485px;
+    min-height: 122px;
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    background: url("../images/promo/round-log.png") left center/ 120px no-repeat,
+      rgba(142, 169, 136, 0.25);
+    padding: 17px 22px 18px 130px;
+    @media (max-width: 959.99px) {
+      width: 100%;
+      background-size: 150px;
+      padding-left: 160px;
+    }
+    @media (max-width: 575.99px) {
+      background-size: 122px;
+      background-position: left -24px;
+      padding: 107px 20px 40px;
+    }
+    &__title {
+      @include font(16px, 20px, 700, $color: $color-light);
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      @media (max-width: 575.99px) {
+        margin-bottom: 8px;
+      }
+    }
+    &__text {
+      @include font(16px, 21px, 400);
+      letter-spacing: 0.32px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 4px;
+    }
+    &__loupe{
+      background: url("../images/icons/loupe.svg") center / auto no-repeat,
+                  rgb(73, 89, 74);
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 40% 0;
+      cursor: pointer;
+    }
+  }
+  &__button{
+    margin-top: 20px;
+    width: 320px;
+    @media (max-width: 959.99px) {
+      width: 100%;
+      height: 90px;
+      font-size: 24px;
+    }
+  }
+}

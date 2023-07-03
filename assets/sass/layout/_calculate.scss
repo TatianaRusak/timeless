@@ -1,0 +1,74 @@
+.calculate {
+  min-height: 500px;
+  padding: 85px 0;
+  margin-top: -110px;
+  background: linear-gradient(to top, #f2f5f1, rgba(255, 255, 255, 0)),
+    url("../images/calculate/calculate-fon.png") center top/ 100% no-repeat,
+    $color-primary-bg-lighter;
+  mask: url('../images/ragged-lines/ragged-line-feedbacks-top.svg') center top / 100% no-repeat,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+    @media (max-width: 767.98px) {
+      mask: url('../images/ragged-lines/ragged-line-feedbacks-top.svg') center top / 100% no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 5%, rgba(0, 0, 0, 1) 100%);
+    }
+    @media (max-width: 479.98px) {
+      mask: url('../images/ragged-lines/ragged-line-feedbacks-top.svg') center top / 100% no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, #000000 2%, rgba(0, 0, 0, 1) 100%);
+    }
+  @media (max-width: 639.98px) {
+    margin-top: -56px;
+  }
+  &__container {
+    @media (max-width: 639.98px) {
+      padding: 0;
+    }
+  }
+  &__title {
+    text-align: left;
+    margin: 190px 0 57px;
+    @media (max-width: 1199.98px) {
+      margin: 90px 0 57px;
+      padding: 0 30px;
+    }
+  }
+}
+
+.calculate__form {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 50px 60px 52px;
+  box-shadow: 0px 16px 64px rgba(45, 54, 43, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  column-gap: 30px;
+  @media (max-width: 1199.98px) {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  @media (max-width: 575.98px) {
+    padding: 50px 30px 52px;
+  }
+
+  .form__item {
+    flex: 1;
+    &:nth-child(1),
+    &:nth-child(2) {
+      @media (max-width: 639.98px) {
+        flex-basis: 100%;
+      }
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      @media (max-width: 1199.98px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .form__item-title {
+    display: block;
+    @include font(16px, 19px, 600);
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+.form {
+background: $color-primary-bg-darker;
+  border-radius: 15px;
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	.input-phone,
+	.input-email,
+	&__item-file {
+		display: block;
+		height: 60px;
+		width: 100%;
+		border-radius: 8px;
+		@include font (16px, 19px, 400);
+		padding: 20px 20px 20px 48px;
+	}
+	.input-phone {
+		background: url("../images/icons/phone.svg") bottom 50% left 16px / 18px no-repeat,
+					$color-primary-bg-lighter;
+	}
+	.input-email {
+		background: url("../images/icons/envelope.svg") bottom 50% left 16px / 18px no-repeat,
+					$color-primary-bg-lighter;
+	}
+	&__item-file {
+		position: relative;
+		padding: 0;
+		background: url("../images/icons/paperclip.svg") bottom 50% left 16px / 18px no-repeat,
+			$color-primary-bg-lighter;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			right: 5px;
+			bottom: 5px;
+			border: 1px dashed #8EA988;
+			border-radius: 8px;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 48px;
+			transform: translateY(-50%);
+			@include font(13px, 19px, 500);
+			opacity: 0.5;
+		}
+	}
+	.input-file {
+		opacity: 0;
+		width: 100%;
+	}
+	&__button {
+		@include font(18px, 22px, 500, $color: $color-light);
+		width: 100%;
+    flex: 1;
+    height: 60px;
+	}
+} 

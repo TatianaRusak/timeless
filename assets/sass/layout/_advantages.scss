@@ -1,0 +1,127 @@
+.advantages {
+  background: url("../images/advantages/branch-fon.png") right center/ auto no-repeat,
+  $color-primary-bg-lighter;
+  mask: url('../images/ragged-lines/ragged-line-1.svg') center top / 100% no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, #000000 15%, rgba(0, 0, 0, 1) 100%);
+  padding: 164px 0 50px;
+  position: relative;
+  margin-top: -130px;
+  @media (max-width: 1199.98px) {
+      padding: 100px 0 50px;
+      mask: url('../images/ragged-lines/ragged-line-1.svg') 110% top / 100% no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #000000 10%, rgba(0, 0, 0, 1) 100%);
+  }
+  @media (max-width: 959.98px) {
+      padding: 60px 0 50px;
+      background: url("../images/advantages/branch-fon.png") 100% center/ auto no-repeat,
+                  $color-primary-bg-lighter;
+  }
+  @media (max-width: 767.99px) {
+    background: url("../images/advantages/branch-fon.png") 110% center/ 200px no-repeat,
+  $color-primary-bg-lighter;
+      mask: url('../images/ragged-lines/ragged-line-1.svg') center top / 100% no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 5%, rgba(0, 0, 0, 1) 100%);
+  }
+  @media (max-width: 639.98px) {
+      mask: url('../images/ragged-lines/ragged-line-1.svg') center top / 100% no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, #000000 2%, rgba(0, 0, 0, 1) 100%);
+      padding: 40px 0 50px;
+  }
+  &__title {
+    margin: 82px 0 90px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+        column-gap: 40px;
+    row-gap: 80px;
+  }
+  .advantage {
+    position: relative;
+    width: 260px;
+    min-height: 237px;
+    padding: 129px 20px 36px;
+    background: rgba(142, 169, 136, 0.1);
+    border-radius: 15px;
+    &__img-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(44%) translateY(-30%);
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: $color-primary-light;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
+        opacity: 0.2;
+        border: 2px solid $color-primary-light;
+        border-radius: 50%;
+        z-index: -2;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        left: -16px;
+        bottom: -16px;
+        opacity: 0.2;
+        border: 1px solid $color-primary-light;
+        border-radius: 50%;
+        z-index: -2;
+      }
+    }
+    &:nth-child(1) img {
+      position: absolute;
+      top: -5px;
+    }
+    &:nth-child(2) img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &:nth-child(3) img {
+      position: absolute;
+      right: 0;
+      top: -1px;
+    }
+    &:nth-child(4) img {
+      position: absolute;
+      right: 0;
+      bottom: 8px;
+    }
+    &:nth-child(5) img {
+      position: absolute;
+      left: 15px;
+      top: -4px;
+    }
+    &:nth-child(6) img {
+      position: absolute;
+      left: 13px;
+      top: -8px;
+    }
+    &:nth-child(7) img {
+      position: absolute;
+      left: -16px;
+      bottom: -1px;
+    }
+    &__text {
+      text-align: center;
+      @include font (20px, 24px);
+    }
+  }
+  &__branch {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

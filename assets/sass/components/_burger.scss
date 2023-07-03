@@ -1,0 +1,57 @@
+.burger {
+  display: none;
+  position: relative;
+  width: 34px;
+  height: 26px;
+  margin-left: auto;
+  margin-right: 30px;
+  z-index: 30;
+  mix-blend-mode: difference;
+  @media (max-width: 959.99px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @media (max-width: 379.99px) {
+    margin-right: auto;
+    margin-left: 280px;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    transition: all 0.2s ease-in;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    transition: all 0.2s ease-in;
+  }
+  &::before {
+    top: 0;
+    width: 100%;
+  }
+  &::after {
+    bottom: 0;
+    width: 60%;
+  }
+}
+
+.burger.aside-menu-open .burger__line {
+  top: 50%;
+  transform: rotate(-45deg) translateY(50%);
+}
+.burger.aside-menu-open::before {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.aside-menu-open::after {
+  opacity: 0;
+  transform: rotate(-45deg) translateY(50%);
+}
